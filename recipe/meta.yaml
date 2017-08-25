@@ -26,6 +26,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
+    - icu     # [linux]
     - python
     - setuptools
     - pkg-config  # [not win]
@@ -40,13 +41,12 @@ requirements:
     - nose
     - pyparsing
     - pytz
-    - libpng >=1.6.22,<1.6.31
-    - zlib 1.2.11  # [win]
+    - libpng
+    - zlib
     - pyqt 5.6.*  # [not osx]
     - tk 8.6.*  # [linux]
     - functools32  # [py2k]
     - subprocess32  # [py2k and unix]
-    - icu 58.*  # [linux]
   run:
     - python
     - setuptools
@@ -60,12 +60,10 @@ requirements:
     - freetype >=2.7,<3.0a0
     - pytz
     - pyparsing
-    - libpng >=1.6.22,<1.6.31
     - pyqt 5.6.*  # [not osx]
     - tk 8.6.*  # [linux]
     - functools32  # [py2k]
     - subprocess32  # [py2k and unix]
-    - icu 58.*  # [linux]
     - tornado
 
 test:
