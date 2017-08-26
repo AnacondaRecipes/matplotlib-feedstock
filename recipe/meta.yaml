@@ -26,6 +26,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
+    - freetype
     - icu     # [linux]
     - python
     - setuptools
@@ -35,7 +36,6 @@ requirements:
     - numpy 1.9.*  # [win and py35]
     - numpy 1.11.*  # [win and py36]
     - python-dateutil
-    - freetype >=2.7,<3.0a0
     - msinttypes  # [win]
     - cycler >=0.10
     - nose
@@ -57,7 +57,6 @@ requirements:
     - backports.functools_lru_cache
     - cycler >=0.10
     - python-dateutil
-    - freetype >=2.7,<3.0a0
     - pytz
     - pyparsing
     - pyqt 5.6.*  # [not osx]
