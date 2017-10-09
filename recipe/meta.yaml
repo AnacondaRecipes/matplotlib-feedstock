@@ -48,7 +48,6 @@ requirements:
   run:
     - python
     - setuptools
-    - setuptools
     - backports.functools_lru_cache
     - numpy
     - cycler >=0.10
