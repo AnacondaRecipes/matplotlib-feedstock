@@ -41,7 +41,7 @@ requirements:
     - pytz
     - libpng
     - zlib
-    - pyqt 5.6.*  # [not osx]
+    - pyqt 5.6.*  # [not (osx or ppc64le)]
     - tk 8.6.*  # [linux]
     - functools32  # [py2k]
     - subprocess32  # [py2k and unix]
@@ -54,7 +54,7 @@ requirements:
     - python-dateutil
     - pytz
     - pyparsing
-    - pyqt 5.6.*  # [not osx]
+    - pyqt 5.6.*  # [not (osx or ppc64le)]
     - tk 8.6.*  # [linux]
     - functools32  # [py2k]
     - subprocess32  # [py2k and unix]
