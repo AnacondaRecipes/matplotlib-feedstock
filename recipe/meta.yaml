@@ -20,6 +20,8 @@ source:
 
 build:
   number: 0
+  ignore_run_exports:
+    - pyqt
 
 requirements:
   build:
@@ -41,7 +43,8 @@ requirements:
     - pytz
     - libpng
     - zlib
-    - pyqt 5.6.*  # [not (osx or ppc64le)]
+    - pyqt 5.6.*  # [not (osx or ppc64le or py>36)]
+    - pyqt 5.9.*  # [not (osx or ppc64le or py<=36)]
     - tk 8.6.*  # [linux]
     - functools32  # [py2k]
     - subprocess32  # [py2k and unix]
@@ -54,7 +57,7 @@ requirements:
     - python-dateutil
     - pytz
     - pyparsing
-    - pyqt 5.6.*  # [not (osx or ppc64le)]
+    - pyqt >=5.6,<6.0a0  # [not (osx or ppc64le)]
     - tk 8.6.*  # [linux]
     - functools32  # [py2k]
     - subprocess32  # [py2k and unix]
