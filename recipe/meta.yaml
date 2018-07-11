@@ -19,7 +19,7 @@ source:
     - osx-frame.patch  # [osx]
 
 build:
-  number: 0
+  number: 2
   ignore_run_exports:
     - pyqt
 
