@@ -44,7 +44,7 @@ requirements:
     - libpng
     - zlib
     - pyqt 5.6.*  # [win and py==27]
-    - pyqt 5.9.*  # [not (osx or ppc64le) or (win and py!=27)]
+    - pyqt 5.9.*  # [not (osx or ppc64le) and not (win and py==27)]
     - tk 8.6.*  # [linux]
     - functools32  # [py2k]
     - subprocess32  # [py2k and unix]
@@ -57,11 +57,12 @@ requirements:
     - python-dateutil
     - pytz
     - pyparsing
-    - pyqt >=5.6,<6.0a0  # [not (osx or ppc64le)]
     - tk 8.6.*  # [linux]
     - functools32  # [py2k]
     - subprocess32  # [py2k and unix]
     - tornado
+    - pyqt 5.6.*  # [win and py==27]
+    - pyqt 5.9.*  # [not (osx or ppc64le) and not (win and py==27)]
     - kiwisolver
 
 test:
