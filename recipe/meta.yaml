@@ -1,7 +1,7 @@
 # Full credit goes to https://github.com/conda/conda-recipes for providing this recipe.
 # It has been subsequently adapted for automated building with conda-forge.
 
-{% set version = "2.2.3" %}
+{% set version = "3.0.0" %}
 
 package:
   name: matplotlib
@@ -9,17 +9,16 @@ package:
 
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
-  sha256: da5b804222864a8e854ed68f16dcbc8b2fa096537d84f879cc8289db368735c8
+  sha256: 4ab565581e3012fec06f93fc181d719a6f214f34c5b2a9f808741f0097507ea4
   patches:
     # Find libpng on Windows.
     - setupext.patch  # [win]
     # A patch to make Qt the default backend.
     - cfg_qt5agg.patch  # [not osx]
-    # Removes framework check from osx backend (seems unneeded)
-    - osx-frame.patch  # [osx]
 
 build:
   number: 0
+  skip: True    # [py<34]
   ignore_run_exports:
     - pyqt
 
@@ -33,7 +32,6 @@ requirements:
     - python
     - setuptools
     - pkg-config  # [not win]
-    - backports.functools_lru_cache  # [py2k]
     - numpy
     - python-dateutil
     - msinttypes  # [win]
@@ -43,26 +41,19 @@ requirements:
     - pytz
     - libpng
     - zlib
-    - pyqt 5.6.*  # [win and py==27]
-    - pyqt 5.9.*  # [not (osx or ppc64le) and not (win and py==27)]
+    - pyqt 5.9.*  # [not (osx or ppc64le)]
     - tk 8.6.*  # [linux]
-    - functools32  # [py2k]
-    - subprocess32  # [py2k and unix]
   run:
     - python
     - setuptools
-    - backports.functools_lru_cache  # [py2k]
     - numpy
     - cycler >=0.10
     - python-dateutil
     - pytz
     - pyparsing
     - tk 8.6.*  # [linux]
-    - functools32  # [py2k]
-    - subprocess32  # [py2k and unix]
     - tornado
-    - pyqt 5.6.*  # [win and py==27]
-    - pyqt 5.9.*  # [not (osx or ppc64le) and not (win and py==27)]
+    - pyqt 5.9.*  # [not (osx or ppc64le)]
     - kiwisolver
 
 test:
