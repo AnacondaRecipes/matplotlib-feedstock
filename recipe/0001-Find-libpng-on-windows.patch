@@ -1,0 +1,24 @@
+From eacb21e4326386ea9e47e679abfb7ff011eef8ad Mon Sep 17 00:00:00 2001
+From: Sophia Castellarin <scastellarin@anaconda.com>
+Date: Thu, 30 May 2019 09:46:04 -0500
+Subject: [PATCH] Find libpng
+
+---
+ setupext.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/setupext.py b/setupext.py
+index 3e8b382cc..7cfb6bb36 100644
+--- a/setupext.py
++++ b/setupext.py
+@@ -830,7 +830,7 @@ class Png(SetupPackage):
+             ext, 'libpng',
+             atleast_version='1.2',
+             alt_exec=['libpng-config', '--ldflags'],
+-            default_libraries=['png', 'z'])
++            default_libraries=['libpng', 'z'])
+         Numpy().add_flags(ext)
+         return ext
+
+--
+2.19.2
