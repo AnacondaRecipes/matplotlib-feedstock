@@ -1,77 +1,89 @@
 # Full credit goes to https://github.com/conda/conda-recipes for providing this recipe.
 # It has been subsequently adapted for automated building with conda-forge.
 
-{% set version = "3.1.1" %}
+{% set version = "3.1.2" %}
 
 package:
-  name: matplotlib
+  name: matplotlib-base
   version: {{ version }}
 
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
-  sha256: 29d1a239bb7d1095d98d8831bb661519ab0d23e30d38ed47729f554f15e8cd3e
+  sha256: a48803e79013d01f22454fd718a575c6f9dadced211722637487fc2f7803620e
   patches:
     # Find libpng on Windows.
-    - 0001-Find-libpng-on-windows.patch  # [win]
-    # A patch to make Qt the default backend.
-    - cfg_qt5agg.patch  # [not osx]
+    - setupext.patch  # [win]
+    # https://github.com/matplotlib/matplotlib/pull/14891
+    - PR14891.patch
 
 build:
-  number: 0
-  skip: True    # [py<34]
-  ignore_run_exports:
-    - pyqt
+  number: 1
+  skip: true  # [py<35]
 
 requirements:
   build:
+    - pkg-config  # [not win]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - freetype
-    - icu     # [linux]
     - python
-    - setuptools
-    - pkg-config  # [not win]
+    - pip
     - numpy
-    - python-dateutil
-    - msinttypes  # [win]
     - cycler >=0.10
+    - python-dateutil
+    - freetype
+    - msinttypes  # [win]
     - nose
     - pyparsing
-    - pytz
     - libpng
-    - zlib
-    - pyqt 5.9.*  # [not (osx or ppc64le)]
-    - tk 8.6.*  # [linux]
+    - zlib  # [win]
+    - tk  # [linux]
+    - icu  # [linux]
   run:
     - python
     - setuptools
-    - numpy
+    - {{ pin_compatible('numpy') }}
     - cycler >=0.10
     - python-dateutil
-    - pytz
+    - freetype
     - pyparsing
-    - tk 8.6.*  # [linux]
+    - libpng
+    - tk  # [linux]
+    - icu  # [linux]
     - tornado
     - pyqt 5.9.*  # [not (osx or ppc64le)]
     - kiwisolver
 
-test:
-  requires:
-    - pytest
-  imports:
-    - matplotlib
-    - matplotlib.pyplot
-    - matplotlib._image
-    - matplotlib._path
-    - matplotlib._png
-    - matplotlib._tri
-    - matplotlib.backends._backend_agg
-    - matplotlib.ft2font
-    - matplotlib.ttconv
-    - matplotlib.backends._tkagg  # [not win]
-    - mpl_toolkits
-    - pylab
+outputs:
+  - name: matplotlib-base
+
+  - name: matplotlib
+    requirements:
+      host:
+        - python
+      run:
+        - python
+        - pyqt  # [not osx and not aarch64 and not ppc64le]
+        - {{ pin_subpackage('matplotlib-base', exact=True) }}
+    test:
+      imports:
+        - matplotlib
+
+  - name: mpl_sample_data
+    script: install-data.sh  # [not win]
+    script: install-data.bat  # [win]
+    requirements:
+      host:
+        - python
+      run:
+        - python
+        - {{ pin_subpackage('matplotlib-base', exact=True) }}
+    test:
+      imports:
+        - matplotlib.cbook
+      commands:
+        - python -c "import matplotlib; matplotlib.cbook.get_sample_data('msft.csv', asfileobj=False)"
+>>>>>>> 6216392f740e955fd5eb12cf3c2068d482c5e9c2
 
 about:
   home: http://matplotlib.org/
