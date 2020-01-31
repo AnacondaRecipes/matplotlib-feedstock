@@ -24,41 +24,40 @@ build:
 
 requirements:
   build:
+    - pkg-config  # [not win]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - freetype
-    - icu     # [linux]
     - python
-    - setuptools
-    - pkg-config  # [not win]
+    - pip
     - numpy
-    - python-dateutil
-    - msinttypes  # [win]
     - cycler >=0.10
+    - python-dateutil
+    - freetype
+    - msinttypes  # [win]
     - nose
     - pyparsing
-    - pytz
     - libpng
-    - zlib
-    - pyqt 5.9.*  # [not (osx or ppc64le)]
+    - zlib  # [win]
     - tk 8.6.*  # [linux]
+    - icu  # [linux]
+    - pyqt 5.9.*  # [not (osx or ppc64le)]
   run:
     - python
     - setuptools
-    - numpy
+    - {{ pin_compatible('numpy') }}
     - cycler >=0.10
     - python-dateutil
-    - pytz
+    - freetype
     - pyparsing
+    - libpng
     - tk 8.6.*  # [linux]
+    - icu  # [linux]
     - tornado
-    - pyqt 5.9.*  # [not (osx or ppc64le)]
     - kiwisolver
+    - pyqt 5.9.*  # [not (osx or ppc64le)]
 
 test:
-  requires:
-    - pytest
   imports:
     - matplotlib
     - matplotlib.pyplot
