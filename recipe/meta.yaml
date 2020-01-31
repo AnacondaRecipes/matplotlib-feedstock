@@ -13,8 +13,6 @@ source:
   patches:
     # Find libpng on Windows.
     - 0001-Find-libpng-on-windows.patch  # [win]
-    # A patch to make Qt the default backend.
-    - cfg_qt5agg.patch  # [not osx]
 
 build:
   number: 0
