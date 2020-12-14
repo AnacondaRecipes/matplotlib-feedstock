@@ -10,11 +10,14 @@ package:
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
   sha256: a17664009de73849906de076c1de60d2854d26325d012cdd0b5e75edb8bd8edb
-
+  patches:  # [osx]
+    - fix_osx_1011_dep.patch  # [osx]
 
 build:
   number: 0
   skip: true  # [py<36]
+  ignore_run_exports:  # [linux]
+    - tk  # [linux]
 
 outputs:
   - name: matplotlib-base
