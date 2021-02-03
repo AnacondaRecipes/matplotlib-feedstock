@@ -15,6 +15,10 @@ source:
 build:
   number: 0
   skip: true  # [py<36]
+  # matplotlib uses its own _tkmini.h file from the Tcl / Tk 8.6 header.
+  # this is an optional backend that we include.
+  ignore_run_exports:   # [linux]
+    - tk                # [linux]
 
 outputs:
   - name: matplotlib-base
@@ -22,9 +26,9 @@ outputs:
     script: build_base.sh  # [not win]
     requirements:
       build:
-        - python                                 # [build_platform != target_platform]
-        - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-        - numpy                                  # [build_platform != target_platform]
+        - python                                 # [build_platform != target_platform and not win]
+        - cross-python_{{ target_platform }}     # [build_platform != target_platform and not win]
+        - numpy                                  # [build_platform != target_platform and not win]
         - pkg-config  # [not win]
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
@@ -76,7 +80,7 @@ outputs:
         - python
       run:
         - python
-        - pyqt  # [not osx and not aarch64 and not ppc64le and python_impl == "cpython"]
+        - pyqt  # [(linux64 or win) and python_impl == "cpython"]
         - {{ pin_subpackage('matplotlib-base', max_pin="x.x.x.x") }}
     test:
       imports:
