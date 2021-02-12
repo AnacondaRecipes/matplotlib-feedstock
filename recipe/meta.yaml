@@ -10,7 +10,8 @@ package:
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
   sha256: ce7cebd3df11a032fff9b3a32029f49f0fc7c322f556f26ea9ef812d6e43cb21
-
+  patches:                    # [osx]
+    - fix_osx_1011_dep.patch  # [osx]
 
 build:
   number: 0
@@ -55,8 +56,8 @@ outputs:
         - tk  # [linux]
         - tornado
         - kiwisolver >=1.0.1
-      run_constrained:
-        - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx]
+      # run_constrained:
+        # - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.11") }}  # [osx]
     test:
       requires:
         - pytest
