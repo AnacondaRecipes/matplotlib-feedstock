@@ -1,20 +1,25 @@
 # Full credit goes to https://github.com/conda/conda-recipes for providing this recipe.
 # It has been subsequently adapted for automated building with conda-forge.
 
-{% set version = "3.2.2" %}
+{% set version = "3.3.4" %}
 
 package:
-  name: matplotlib-base
+  name: matplotlib-suite
   version: {{ version }}
 
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
-  sha256: dd4ff3e19f507a5a07612fa642e6e66fadbaf303483a43dc3acb04067f7ac522
-
+  sha256: ce7cebd3df11a032fff9b3a32029f49f0fc7c322f556f26ea9ef812d6e43cb21
+  patches:                    # [osx]
+    - fix_osx_1011_dep.patch  # [osx]
 
 build:
   number: 0
-  skip: true  # [py<35]
+  skip: true  # [py<36]
+  # matplotlib uses its own _tkmini.h file from the Tcl / Tk 8.6 header.
+  # this is an optional backend that we include.
+  ignore_run_exports:   # [linux]
+    - tk                # [linux]
 
 outputs:
   - name: matplotlib-base
@@ -22,6 +27,9 @@ outputs:
     script: build_base.sh  # [not win]
     requirements:
       build:
+        - python                                 # [build_platform != target_platform and not win]
+        - cross-python_{{ target_platform }}     # [build_platform != target_platform and not win]
+        - numpy                                  # [build_platform != target_platform and not win]
         - pkg-config  # [not win]
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
@@ -34,23 +42,22 @@ outputs:
         - freetype
         - nose
         - pyparsing
-        - libpng
-        - zlib  # [win]
         - tk  # [linux]
-        - icu  # [linux]
       run:
         - python
         - setuptools
         - {{ pin_compatible('numpy') }}
+        - certifi >=2020.06.20
         - cycler >=0.10
-        - python-dateutil
+        - python-dateutil >=2.1
+        - pillow >=6.2.0
         - freetype
-        - pyparsing
-        - libpng
+        - pyparsing >=2.0.3,!=2.0.4,!=2.1.2,!=2.1.6
         - tk  # [linux]
-        - icu  # [linux]
         - tornado
-        - kiwisolver
+        - kiwisolver >=1.0.1
+      # run_constrained:
+        # - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.11") }}  # [osx]
     test:
       requires:
         - pytest
@@ -59,7 +66,6 @@ outputs:
         - matplotlib.pyplot
         - matplotlib._image
         - matplotlib._path
-        - matplotlib._png
         - matplotlib._tri
         - matplotlib.backends._backend_agg
         - matplotlib.ft2font
@@ -71,8 +77,11 @@ outputs:
   - name: matplotlib
     build:
     requirements:
+      host:
+        - python
       run:
-        - pyqt  # [not osx and not aarch64 and not ppc64le]
+        - python
+        - pyqt  # [(linux64 or win) and python_impl == "cpython"]
         - {{ pin_subpackage('matplotlib-base', max_pin="x.x.x.x") }}
     test:
       imports:
@@ -82,6 +91,8 @@ outputs:
     script: install-data.sh  # [not win]
     script: install-data.bat  # [win]
     build:
+      # running into some odd install issues with noarch on win32 only.
+      skip: true  # [win32 or python_impl == "pypy"]
       noarch: python
     requirements:
       host:
@@ -98,7 +109,7 @@ outputs:
 
 about:
   home: http://matplotlib.org/
-  license: PSF-based
+  license: LicenseRef-PSF-based
   license_url: http://matplotlib.sourceforge.net/users/license.html
   license_family: PSF
   license_file: LICENSE/LICENSE
