@@ -1,7 +1,7 @@
 # Full credit goes to https://github.com/conda/conda-recipes for providing this recipe.
 # It has been subsequently adapted for automated building with conda-forge.
 
-{% set version = "3.3.4" %}
+{% set version = "3.4.2" %}
 
 package:
   name: matplotlib-suite
@@ -9,13 +9,12 @@ package:
 
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
-  sha256: ce7cebd3df11a032fff9b3a32029f49f0fc7c322f556f26ea9ef812d6e43cb21
+  sha256: e5960bcb964ee77d37752f7a1db4568d85e99d8857fbf20289dda2edfa711675
   patches:                    # [osx]
     - fix_osx_1011_dep.patch  # [osx]
 
 build:
   number: 0
-  skip: true  # [py<36]
   # matplotlib uses its own _tkmini.h file from the Tcl / Tk 8.6 header.
   # this is an optional backend that we include.
   ignore_run_exports:   # [linux]
@@ -25,6 +24,10 @@ outputs:
   - name: matplotlib-base
     script: build_base.bat  # [win]
     script: build_base.sh  # [not win]
+    build:
+      skip: true  # [py<37]
+      ignore_run_exports:
+        - tk  # [linux]
     requirements:
       build:
         - python                                 # [build_platform != target_platform and not win]
@@ -36,12 +39,15 @@ outputs:
       host:
         - python
         - pip
+        - certifi >=2020.06.20
+        - setuptools_scm >=4
+        - setuptools_scm_git_archive
         - numpy
         - cycler >=0.10
-        - python-dateutil
+        - python-dateutil >=2.1
         - freetype
         - nose
-        - pyparsing
+        - pyparsing >=2.2.1
         - tk  # [linux]
       run:
         - python
@@ -49,10 +55,11 @@ outputs:
         - {{ pin_compatible('numpy') }}
         - certifi >=2020.06.20
         - cycler >=0.10
+        - fonttools >=4.22.0
         - python-dateutil >=2.1
         - pillow >=6.2.0
         - freetype
-        - pyparsing >=2.0.3,!=2.0.4,!=2.1.2,!=2.1.6
+        - pyparsing >=2.2.1
         - tk  # [linux]
         - tornado
         - kiwisolver >=1.0.1
@@ -76,6 +83,7 @@ outputs:
 
   - name: matplotlib
     build:
+      skip: true  # [py<37]
     requirements:
       host:
         - python
@@ -96,9 +104,9 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python
+        - python >=3.7
       run:
-        - python
+        - python >=3.7
         # match major/minor version, but allow noarch
         - {{ pin_subpackage('matplotlib-base', max_pin="x.x") }}
     test:
