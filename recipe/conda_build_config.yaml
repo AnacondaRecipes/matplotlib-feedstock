@@ -6,3 +6,5 @@ macos_min_version:              # [osx and x86_64]
   - 10.11                       # [osx and x86_64]
 MACOSX_DEPLOYMENT_TARGET:       # [osx and x86_64]
   - 10.11                       # [osx and x86_64]
+numpy:
+  - 1.19
