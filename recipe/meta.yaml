@@ -57,8 +57,6 @@ outputs:
         - pyparsing >=2.2.1
         - python-dateutil >=2.7
         - tk  # [linux]
-        # Installing from a git checkout.
-        - setuptools_scm >=4
 
     test:
       requires:
