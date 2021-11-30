@@ -43,7 +43,7 @@ outputs:
         - setuptools_scm_git_archive
         - tk  # [linux]
       run:
-        - python >=3.7
+        - python
         - cycler >=0.10
         - fonttools >=4.22.0
         - freetype >=2.3
