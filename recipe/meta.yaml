@@ -10,8 +10,6 @@ package:
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
   sha256: fc46f0eb54d9d51ddf0637e383afce2fdb6e352d894a81993b25d8df41eddaaf
-  # patches:                    # [osx]
-  #   - fix_osx_1011_dep.patch  # [osx]
   patches:
     - pypi.patch  # [python_impl == "pypy"]
     - pre-7.3.6-0001.patch  # [python_impl == "pypy" and win]
@@ -33,8 +31,6 @@ outputs:
         - tk  # [linux]
     requirements:
       build:
-        - python                                 # [build_platform != target_platform and not win]
-        - cross-python_{{ target_platform }}     # [build_platform != target_platform and not win]
         - numpy                                  # [build_platform != target_platform and not win]
         - pkg-config  # [not win]
         - {{ compiler('c') }}
@@ -43,41 +39,43 @@ outputs:
         - python
         - pip
         - certifi >=2020.06.20
+        - freetype >=2.3
+        - numpy
+        - setuptools
         - setuptools_scm >=4
         - setuptools_scm_git_archive
-        - numpy
-        - cycler >=0.10
-        - python-dateutil >=2.7
-        - freetype
-        - nose
-        - pyparsing >=2.2.1
         - tk  # [linux]
       run:
         - python
-        - setuptools
-        - {{ pin_compatible('numpy') }}
-        - certifi >=2020.06.20
         - cycler >=0.10
         - fonttools >=4.22.0
-        - python-dateutil >=2.1
-        - pillow >=6.2.0
-        - freetype
-        - pyparsing >=2.2.1
-        - tk  # [linux]
-        - tornado
+        - freetype >=2.3
         - kiwisolver >=1.0.1
+        - {{ pin_compatible('numpy') }}
+        - packaging >=20.0
+        - pillow >=6.2.0
+        - pyparsing >=2.2.1
+        - python-dateutil >=2.7
+        - tk  # [linux]
+        # Installing from a git checkout.
+        - setuptools_scm >=4
+
     test:
       requires:
         - pytest
+        - pip
+      commands:
+        - pip check
       imports:
         - matplotlib
         - matplotlib.pyplot
+        - matplotlib._contour
         - matplotlib._image
         - matplotlib._path
         - matplotlib._tri
+        - matplotlib._ttconv
         - matplotlib.backends._backend_agg
         - matplotlib.ft2font
-        - matplotlib.ttconv
         - matplotlib.backends._tkagg  # [not win]
         - mpl_toolkits
         - pylab
@@ -91,6 +89,7 @@ outputs:
       run:
         - python
         - pyqt  # [(linux64 or win) and python_impl == "cpython"]
+        - tornado
         - {{ pin_subpackage('matplotlib-base', max_pin="x.x.x.x") }}
     test:
       imports:
