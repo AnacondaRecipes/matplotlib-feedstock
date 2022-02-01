@@ -1,0 +1,2753 @@
+commit 8c5fff132a49b2e6adf71fb4b5315ad66bf0429b
+Author: anaconda-pkg-build <anaconda-pkg-build@anaconda.com>
+Date:   Sat Dec 11 12:09:12 2021 +0000
+
+    DOR update to 3.5.1
+
+commit 3531c75e336ec52736f7c192f7a2b6ecfe82d08b
+Merge: 1b79f3c 45dd518
+Author: Serhii Kupriienko <79282962+skupr-anaconda@users.noreply.github.com>
+Date:   Wed Dec 1 17:53:30 2021 +0200
+
+    Merge pull request #8 from AnacondaRecipes/pbs_3.5.0_20211126T093152
+    
+    matplotlib 3.5.0
+
+commit 45dd5188f775e70b5255176541b675baed769e07
+Author: Serhii Kupriienko <79282962+skupr-anaconda@users.noreply.github.com>
+Date:   Tue Nov 30 18:23:39 2021 +0200
+
+    Fix python in run
+
+commit c6b040bd74be26b1c32d546e05fe1e970278b10c
+Author: Serhii Kupriienko <79282962+skupr-anaconda@users.noreply.github.com>
+Date:   Tue Nov 30 10:09:58 2021 +0200
+
+    Remove patches
+
+commit c25e04c94721444e6d85650f414cad961d97ec62
+Merge: 77d9065 9fa699c
+Author: Serhii Kupriienko <79282962+skupr-anaconda@users.noreply.github.com>
+Date:   Tue Nov 30 10:06:58 2021 +0200
+
+    Resolve issue in run
+
+commit 77d90651b66adc0bba680933a9a98f468ccaa67c
+Author: Serhii Kupriienko <79282962+skupr-anaconda@users.noreply.github.com>
+Date:   Tue Nov 30 10:05:39 2021 +0200
+
+    Small fix
+
+commit 9fa699c9a8c22f9dfa5f06fe756141614785f4fa
+Author: Serhii Kupriienko <79282962+skupr-anaconda@users.noreply.github.com>
+Date:   Tue Nov 30 10:04:28 2021 +0200
+
+    Remove setuptools_scm from run as unneeded
+    
+    Co-authored-by: Anthony DiPietro <51377278+adipietro18@users.noreply.github.com>
+
+commit 4249e492408232883eea5d1c67388165e149bf92
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Mon Nov 29 17:15:21 2021 +0000
+
+    Fix cbc.yaml
+
+commit f650c19a0146c69e38e59d58fdb6833d8f421fd5
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Mon Nov 29 16:50:03 2021 +0000
+
+    Update cbc.yaml
+
+commit 6c7f1a7207eebc4ed3de06ad336a4fee34b3439b
+Author: Serhii Kupriienko <skupriienko@anaconda.com>
+Date:   Mon Nov 29 11:28:03 2021 +0000
+
+    Update dependencies
+
+commit c916038ecd71881026aed5523ac9c3efc15c5422
+Author: anaconda-pkg-build <anaconda-pkg-build@anaconda.com>
+Date:   Fri Nov 26 09:31:57 2021 +0000
+
+    DOR update to 3.5.0
+
+commit 1b79f3c451a47258ac60f3cb02c882a4aa3b0b15
+Merge: 6a7408a caf29db
+Author: Anthony DiPietro <51377278+adipietro18@users.noreply.github.com>
+Date:   Wed Oct 20 11:23:17 2021 -0400
+
+    Merge pull request #6 from AnacondaRecipes/release-v3.4.3
+    
+    Release v3.4.3
+
+commit caf29db98d431551b8ce44b6aa3cc533db3a945a
+Author: Anthony DiPietro <adipietro@anaconda.com>
+Date:   Tue Oct 19 14:07:50 2021 -0400
+
+    Adding required MacOSX sdk to local cbc
+
+commit e46fcf16207767460d74bf28986ef8352f53dc7e
+Merge: 6a7408a 2799288
+Author: Anthony DiPietro <adipietro@anaconda.com>
+Date:   Tue Oct 19 13:43:25 2021 -0400
+
+    Merge remote-tracking branch 'conda-forge/master' into release-v3.4.3
+
+commit 279928858c00b20fb47445ba47062f12a6977a72
+Merge: 84d3d4d 5876cc0
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Sep 23 14:01:13 2021 -0300
+
+    Merge pull request #304 from isuruf/custom
+    
+    Remove custom MACOSX_DEPLOYMENT_TARGET
+
+commit 5876cc0e6fd0a613a12bb3f51f864a67fc585e4c
+Author: conda-forge-linter <github-actions@email.com>
+Date:   Thu Sep 23 07:30:10 2021 +0000
+
+    MNT: Re-rendered with conda-build 3.21.4, conda-smithy 3.12, and conda-forge-pinning 2021.09.22.17.56.27
+
+commit cb430bc72bd8ef0a90c7d587b7439189529996a3
+Author: Isuru Fernando <isuruf@gmail.com>
+Date:   Thu Sep 23 00:26:04 2021 -0700
+
+    Use 10.11 SDK
+
+commit 197dbdb8afe3a3df4d1bbdca6da6489a3c447b94
+Author: conda-forge-linter <github-actions@email.com>
+Date:   Thu Sep 23 06:58:19 2021 +0000
+
+    MNT: Re-rendered with conda-build 3.21.4, conda-smithy 3.12, and conda-forge-pinning 2021.09.22.17.56.27
+
+commit e34fa4eafc9da262165537422f6d615efb182fda
+Author: Isuru Fernando <isuruf@gmail.com>
+Date:   Wed Sep 22 23:53:51 2021 -0700
+
+    Remove custom MACOSX_DEPLOYMENT_TARGET
+
+commit 84d3d4dccf527cb427fb13f6408dd63e65449713
+Merge: d9ba29c 847ead8
+Author: Ryan May <rmay31@gmail.com>
+Date:   Wed Aug 25 13:15:41 2021 -0600
+
+    Merge pull request #301 from tacaswell/mpl35_prep
+    
+    MNT: change how mplconfig.cfg is passed in
+
+commit 847ead8c02a7fd059d843ffc9a8921115dae11f0
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Sat Aug 21 12:12:13 2021 -0400
+
+    MNT: change how mplconfig.cfg is passed in
+    
+    In mpl3.5 the name of the file Matplotlib looks for by default will change from
+    config.cfg to mplconfig.cfc (to not conflict with setuptools/distutils see
+    https://github.com/matplotlib/matplotlib/pull/20871/ ).
+    
+    This uses the MPLSETUPCFG env (which exist from 0.x days) to set the path which
+    will work for all existing and expected versions of Matplotlib.
+
+commit d9ba29ca810643f6f48d604edc009f4738584258
+Merge: 818dedd 9ee5713
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Aug 13 16:07:13 2021 -0300
+
+    Merge pull request #299 from regro-cf-autotick-bot/3.4.3_h4e53ed
+    
+    matplotlib v3.4.3
+
+commit 9ee5713bbf39173ba2e9c5addd48dc8af5df37f5
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Fri Aug 13 04:18:37 2021 +0000
+
+    updated v3.4.3
+
+commit 818dedd5aa4d3fa77c7827adc47504c943d909ce
+Merge: 1fb8f9b ed14896
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Aug 9 11:58:03 2021 -0300
+
+    Merge pull request #298 from mattip/manual-migration
+    
+    Manual migration for PyPy windows
+
+commit ed14896ba4fcd13db088875d2bf5d30b11881849
+Author: mattip <matti.picus@gmail.com>
+Date:   Fri Aug 6 16:35:20 2021 +0300
+
+    add a fix for pypy-windows, can remove after the next pypy release
+
+commit 608f62df9b37a50d2977d735b65056f645661418
+Author: mattip <matti.picus@gmail.com>
+Date:   Fri Aug 6 13:52:51 2021 +0300
+
+    MNT: Re-rendered with conda-build 3.21.4, conda-smithy 3.11.0, and conda-forge-pinning 2021.08.05.18.49.42
+
+commit 8dd78cad922af5bdc7d819becfe54020fe53ecaf
+Author: mattip <matti.picus@gmail.com>
+Date:   Fri Aug 6 13:48:25 2021 +0300
+
+    add manual migration for pypy37_windows
+
+commit 6a7408a91b439416ce665a051638df2741098a7c
+Merge: 435be6f cf82004
+Author: ansthomas <79927493+ansthomas@users.noreply.github.com>
+Date:   Tue Aug 3 13:23:06 2021 -0500
+
+    Merge pull request #3 from AnacondaRecipes/matplotlib-3.4.2
+    
+    Added/updated upstream dependencies
+
+commit cf82004de5dd9a3e69fee9628c67060a9efda639
+Author: Anju Thomas <anthomas@anaconda.com>
+Date:   Mon Aug 2 15:39:55 2021 -0500
+
+    Added/updated upstream dependencies
+
+commit 1fb8f9baf8b74041daf9a84a115d00653c9e1cab
+Merge: 226b052 f7bd5fb
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Sat May 8 16:31:30 2021 -0400
+
+    Merge pull request #296 from regro-cf-autotick-bot/3.4.2_h55e32f
+    
+    matplotlib v3.4.2
+
+commit f7bd5fbf5b81351e511e375be3626411ab22258d
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Sat May 8 06:04:59 2021 +0000
+
+    MNT: Re-rendered with conda-build 3.21.4, conda-smithy 3.10.1, and conda-forge-pinning 2021.05.07.21.54.12
+
+commit 8d2b25530c5805d438a99da09c8708c2ba2be0ac
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Sat May 8 06:04:23 2021 +0000
+
+    updated v3.4.2
+
+commit 226b0527081f1f9cb3c4d75f97c8b73c6ab742a7
+Merge: 22650cb 1f6e0f0
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Mar 31 14:43:54 2021 -0300
+
+    Merge pull request #292 from jan-janssen/master
+    
+    Move skip to individual outputs
+
+commit 1f6e0f0a72592e5658b589aa3fa83e3d14af1ee7
+Author: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date:   Wed Mar 31 11:57:10 2021 +0200
+
+    Update meta.yaml
+
+commit 8c616296d337cf8e7292321c016f696397381bca
+Author: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date:   Wed Mar 31 11:56:21 2021 +0200
+
+    Add files via upload
+
+commit 5f938a75f3c12142b5584ae42a8f42b83df9b0ca
+Author: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date:   Wed Mar 31 11:42:39 2021 +0200
+
+    Update to 3.4.1
+
+commit dc88d03b04a54a2f98e412d6a15727a93a904ab1
+Author: Jan Janßen <janssen@mpie.de>
+Date:   Mon Mar 29 11:01:57 2021 +0200
+
+    MNT: Re-rendered with conda-build 3.21.4, conda-smithy 3.9.0, and conda-forge-pinning 2021.03.28.21.25.09
+
+commit 9b6d951d2a0c989a34c99f8bf828ced0f1b37d49
+Author: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date:   Mon Mar 29 10:58:29 2021 +0200
+
+    Move skip to individual outputs
+
+commit 22650cb35d8a697c3521bd47a496b76b001fadb2
+Merge: bedb004 5876881
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Mar 26 15:09:28 2021 -0300
+
+    Merge pull request #289 from regro-cf-autotick-bot/3.4.0_ha6f40c
+    
+    matplotlib v3.4.0
+
+commit 587688126741e957f92e0cad4f98510219b20def
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Fri Mar 26 14:39:47 2021 -0300
+
+    MNT: Re-rendered with conda-build 3.21.4, conda-smithy 3.9.0, and conda-forge-pinning 2021.03.26.15.18.50
+
+commit 9a6b3fe520d80a4b3b2f0b256c0ae28a46685afb
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Fri Mar 26 14:39:10 2021 -0300
+
+    update with latest pkg metadata
+
+commit 89669f5f256ad6c07bdf42a46543887d354d56e9
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Fri Mar 26 06:57:42 2021 +0000
+
+    MNT: Re-rendered with conda-build 3.21.4, conda-smithy 3.9.0, and conda-forge-pinning 2021.03.25.14.57.03
+
+commit 7e3a0d119588f0542aaea1fb66b6311b3a11d8b7
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Fri Mar 26 06:57:20 2021 +0000
+
+    updated v3.4.0
+
+commit 435be6f3c9f935497a6686d0f79c943fee4a922e
+Merge: f37cab6 cd657d9
+Author: Anthony DiPietro <51377278+adipietro18@users.noreply.github.com>
+Date:   Mon Feb 15 12:43:48 2021 -0500
+
+    Merge pull request #2 from AnacondaRecipes/pbs_3.3.4_20210202T060419
+    
+    Updating master with updates for 3.3.2 & 3.3.4
+
+commit cd657d944bc6472c06f917085210b242fb526c38
+Author: Anthony DiPietro <adipietro@anaconda.com>
+Date:   Mon Feb 15 12:36:13 2021 -0500
+
+    Skipping noarch on win-32
+
+commit f1e547d93c4c1dc672067842a250c2940abac87b
+Merge: 98cfce5 0c5015f
+Author: Anthony DiPietro <adipietro@anaconda.com>
+Date:   Fri Feb 12 14:07:23 2021 -0500
+
+    Merge remote-tracking branch 'origin/mcy-3.3.2' into pbs_3.3.4_20210202T060419
+
+commit 98cfce5c50a682ef259159ed8c53438f7a419a09
+Author: Anthony DiPietro <adipietro@anaconda.com>
+Date:   Wed Feb 3 17:06:46 2021 -0500
+
+    Updates for the v3.3.4.
+
+commit bedb0048adc0cb1280f44050788f798712126a00
+Merge: 41c3877 9b4607f
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Jan 28 15:29:14 2021 -0300
+
+    Merge pull request #287 from regro-cf-autotick-bot/3.3.4_h209ee0
+
+commit 9b4607f8fb0911278a24d1a6f83a8f889785e222
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Thu Jan 28 11:46:22 2021 +0000
+
+    MNT: Re-rendered with conda-build 3.21.4, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.27.21.31.49
+
+commit 433c09b8219a94c9c03cc4447d8a51d5a93690f3
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Thu Jan 28 11:45:37 2021 +0000
+
+    updated v3.3.4
+
+commit 41c3877fb5aeb4608078442fe27fa4ed243435cf
+Merge: a3b3196 487e536
+Author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+Date:   Thu Jan 14 00:04:58 2021 +0000
+
+    Rebuild for pypy37
+    
+    automerged PR by conda-forge/automerge-action
+
+commit 487e5365044ec525b85bbd49774f7f78ffb973a4
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Wed Jan 13 20:24:07 2021 +0000
+
+    MNT: Re-rendered with conda-build 3.21.3, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.13.15.26.02
+
+commit 81464ac2236934f05de164fbe0f37b72d20a6909
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Wed Jan 13 20:23:24 2021 +0000
+
+    Rebuild for pypy37
+
+commit 0c5015f48356d5965daa82e352fd7bc31b8b527f
+Author: Anthony DiPietro <adipietro@anaconda.com>
+Date:   Mon Dec 14 14:45:35 2020 -0500
+
+    Adding some recipe updates from uploaded packages.
+
+commit a3b3196a538b4b5db3b0455085d735fe5ceb36e4
+Merge: 388c19b cd52c5a
+Author: Ryan May <rmay31@gmail.com>
+Date:   Tue Nov 17 10:51:18 2020 -0700
+
+    Merge pull request #273 from ocefpaf/migrate_branches
+    
+    migrate branches
+
+commit cd52c5aee8c6bcc53d4bfadd52ad47ab08c8c8b5
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Sat Nov 14 19:27:28 2020 -0300
+
+    migrate branches
+    [ci skip]
+
+commit 388c19b3a5522de719ae50e36944be65f2b6df52
+Merge: 551e6c0 93994b8
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Nov 12 08:21:43 2020 -0300
+
+    Merge pull request #271 from regro-cf-autotick-bot/3.3.3_h0761f1
+    
+    matplotlib v3.3.3
+
+commit 93994b80b251425e276afff6c152dd16dc19c01d
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Thu Nov 12 05:34:53 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.20.5, conda-smithy 3.8.5, and conda-forge-pinning 2020.11.11.15.57.25
+
+commit a156317c2af3cda1722774e81db89db467723d22
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Thu Nov 12 05:34:13 2020 +0000
+
+    updated v3.3.3
+
+commit 551e6c0dab27b4c09f08f9ff43647945c3d85ef3
+Merge: ad36e44 4bd050a
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun Nov 8 18:27:10 2020 -0300
+
+    Merge pull request #269 from regro-cf-autotick-bot/bot-pr_arm_osx_hd5de44
+
+commit 4bd050a04edb9af727a1c76f7a758eb57414ddbb
+Author: conda-forge-linter <github-actions@email.com>
+Date:   Sat Nov 7 16:50:49 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.20.5, conda-smithy 3.8.5, and conda-forge-pinning 2020.11.07.01.17.20
+
+commit ba87ce015b84cb626fc0aadf2397f5d507bb7d65
+Author: Isuru Fernando <isuruf@gmail.com>
+Date:   Sat Nov 7 10:48:04 2020 -0600
+
+    Fix deployment target
+
+commit 478a42405fb01182c58ff41c85b83ff23d108d5e
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Sat Nov 7 13:50:51 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.20.5, conda-smithy 3.8.5, and conda-forge-pinning 2020.11.07.01.17.20
+
+commit fcbe1d801ae73741044ec138deb1f3453c5c0f5c
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Sat Nov 7 13:50:12 2020 +0000
+
+    migration: OSXArm
+
+commit 657ccd894ea31e6b89d39a715230348daec70ee0
+Author: Megan Yancy <myancy@anaconda.com>
+Date:   Tue Oct 20 07:57:36 2020 -0500
+
+    added tar
+
+commit e420147839d00a639e762b87c3fd662be9382d7b
+Author: Megan Yancy <myancy@anaconda.com>
+Date:   Tue Oct 20 07:45:36 2020 -0500
+
+    in progress 3.3.2
+
+commit ad36e44942efb93efe5b8efa0a85a12fabb2dcb2
+Merge: dd45db7 8a01811
+Author: Ryan May <rmay31@gmail.com>
+Date:   Tue Oct 13 08:50:20 2020 -0600
+
+    Merge pull request #266 from regro-cf-autotick-bot/rebuild-python39-0-2_h1b1cc0
+    
+    Rebuild for python39
+
+commit 8a0181146345b1ad5525e6be37001dd3b54e4e4b
+Author: Ryan May <rmay@ucar.edu>
+Date:   Mon Oct 12 12:11:46 2020 -0600
+
+    Add python as host dep for "matplotlib" output
+    
+    Trying to fix weird build that allowed the output to build with 3.8
+    instead of 3.9 on a 3.9 build.
+
+commit 71730e42e3b217d2452d87a63e9189e3562838f3
+Author: Chris Burr <christopher.burr@cern.ch>
+Date:   Mon Oct 12 13:00:47 2020 +0200
+
+    matplotlib._png has been removed https://matplotlib.org/3.3.0/api/api_changes.html#matplotlib-now-uses-pillow-to-save-and-read-pngs
+
+commit 75c97f0cb57c313153f00fd1441641936c5b3cb7
+Author: conda-forge-linter <github-actions@email.com>
+Date:   Mon Oct 12 15:37:41 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.20.3, conda-smithy 3.8.1, and conda-forge-pinning 2020.10.12.15.14.45
+
+commit 390a50f9243584cac2bcfe6180558999c2b60888
+Author: Ryan May <rmay@ucar.edu>
+Date:   Sun Oct 11 23:15:43 2020 -0600
+
+    Add python dependency for matplotlib
+    
+    This should force the package to have a python build matrix and not be
+    noarch--this is incorrect since there's a selector on pyqt.
+
+commit 4ce9ec6b7a4b039442ced3a849bc8d7e2de92570
+Author: Ryan May <rmay@ucar.edu>
+Date:   Sun Oct 11 15:29:36 2020 -0600
+
+    Fix running tests for matplotlib-base package
+    
+    Duplicating the name at the top level and output causes the output not
+    to run tests. Credit to @fcollonval for submitting the fix in #239.
+
+commit 565101c0ae4bcca8caeca751eb9682614cca74ff
+Author: Ryan May <rmay@ucar.edu>
+Date:   Sun Oct 11 14:45:02 2020 -0600
+
+    MNT: Re-rendered with conda-build 3.20.3, conda-smithy 3.8.1, and conda-forge-pinning 2020.10.11.15.10.22
+
+commit fcb65830075b2b758bc5fd00bef7517930244b5d
+Author: Ryan May <rmay@ucar.edu>
+Date:   Sun Oct 11 14:43:51 2020 -0600
+
+    MNT: Cleanup and simplify numpy pinning
+
+commit a899e94df7c977588183a59e312f39442a484fd9
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Sun Oct 11 17:04:13 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.20.3, conda-smithy 3.8.1, and conda-forge-pinning 2020.10.11.15.10.22
+
+commit 5dc37d18549f954f9a79a020706aea57d03afd32
+Author: regro-cf-autotick-bot <36490558+regro-cf-autotick-bot@users.noreply.github.com>
+Date:   Sun Oct 11 17:03:53 2020 +0000
+
+    Rebuild for python39
+
+commit dd45db7dd6a0f56de876a733663d74fbe6cadaf1
+Merge: a1b51af c78852d
+Author: Ryan May <rmay31@gmail.com>
+Date:   Tue Sep 15 02:36:26 2020 -0600
+
+    Merge pull request #264 from regro-cf-autotick-bot/3.3.2_h776c34
+    
+    matplotlib v3.3.2
+
+commit c78852ded54d6257560a314ac206b9216fc7adfb
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Tue Sep 15 07:30:41 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.20.2, conda-smithy 3.7.10, and conda-forge-pinning 2020.09.14.18.14.00
+
+commit e7db86496dedd258a9305366662311d01996da28
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Tue Sep 15 07:30:21 2020 +0000
+
+    updated v3.3.2
+
+commit a1b51afd67f75af44a5823daf97c28a1b4404bf9
+Merge: e0c4ed7 7040f4f
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Thu Aug 20 15:35:28 2020 -0400
+
+    Merge pull request #263 from mbargull-feedstocks/fix-3.3.1-deps
+    
+    Fix 3.3.1 deps
+
+commit 7040f4f18fd6f2b94ec9d99d5a38d5e7b5246eac
+Author: Marcel Bargull <marcel.bargull@udo.edu>
+Date:   Thu Aug 20 20:43:50 2020 +0200
+
+    MNT: Re-rendered with conda-build 3.19.2, conda-smithy 3.7.10, and conda-forge-pinning 2020.08.17.20.01.55
+
+commit 4e851a96d66238980c768cbd7851e1bab868c8ff
+Author: Marcel Bargull <marcel.bargull@udo.edu>
+Date:   Thu Aug 20 20:42:54 2020 +0200
+
+    use constraints from 3.3.1, not 3.4.*
+
+commit dd7f094ac161106693250cadb2b6dec6ce5b4d89
+Author: Marcel Bargull <marcel.bargull@udo.edu>
+Date:   Thu Aug 20 18:22:43 2020 +0200
+
+    MNT: Re-rendered with conda-build 3.19.2, conda-smithy 3.7.10, and conda-forge-pinning 2020.08.17.20.01.55
+
+commit 886402cf1f81160d0462d39629653181046b4e43
+Author: Marcel Bargull <marcel.bargull@udo.edu>
+Date:   Thu Aug 20 18:21:56 2020 +0200
+
+    bump build number
+
+commit 1490f12131e4c9c106407273eb3116404c4d2af5
+Author: Marcel Bargull <marcel.bargull@udo.edu>
+Date:   Thu Aug 20 18:19:30 2020 +0200
+
+    add/update dep constrains
+
+commit 34bdfac7c9024b9e51cff474755d111dbe4a50fc
+Author: Marcel Bargull <marcel.bargull@udo.edu>
+Date:   Thu Aug 20 18:18:51 2020 +0200
+
+    add dep: certifi
+
+commit e0c4ed7c286827c79896b10baf8dd1698f1f9541
+Merge: b1f6867 8e31897
+Author: Ryan May <rmay31@gmail.com>
+Date:   Fri Aug 14 12:04:03 2020 -0600
+
+    Merge pull request #261 from regro-cf-autotick-bot/3.3.1_he1b260
+    
+    matplotlib v3.3.1
+
+commit 8e31897f58ff201f966f1943f4c0c63596ae20a2
+Author: Ryan May <rmay@ucar.edu>
+Date:   Fri Aug 14 11:32:50 2020 -0600
+
+    Also need to remove patch from recipe
+
+commit 85f487adf6d7dd28faa8845ee291ac78eb8cbc1d
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Thu Aug 13 21:52:46 2020 -0400
+
+    MNT: remove patch
+
+commit 35674bdaadf296cb1099049f9181707490cc6d70
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Fri Aug 14 01:22:36 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.19.2, conda-smithy 3.7.9, and conda-forge-pinning 2020.08.13.04.25.14
+
+commit 6f76216d0f9439e54be6e35843a6aad1d1e36a15
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Fri Aug 14 01:22:19 2020 +0000
+
+    updated v3.3.1
+
+commit b1f68676a60fe9b9a9a0d07d8dd21107e1cc1920
+Merge: 24b9d88 b1185df
+Author: Ryan May <rmay31@gmail.com>
+Date:   Mon Aug 10 22:00:46 2020 -0600
+
+    Merge pull request #260 from regro-cf-autotick-bot/bot-pr_arch_h3910ce
+    
+    Arch Migrator
+
+commit b1185dfd7f1995e62f69e4e12b4f8565ee628866
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Mon Aug 10 22:55:09 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.19.2, conda-smithy 3.7.8, and conda-forge-pinning 2020.08.10.21.36.31
+
+commit f7d1c7382a7173b02ef4f16b8635c3f7985e8b98
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Mon Aug 10 22:54:52 2020 +0000
+
+    migration: ArchRebuild
+
+commit 24b9d8840fd763e13056478ec4679892c77fb40f
+Author: conda-forge-admin <conda-forge-admin@email.com>
+Date:   Sat Aug 8 08:06:40 2020 +0000
+
+    [ci skip] [skip ci] [cf admin skip] ***NO_CI*** admin migration CFEP13TokenCleanup
+
+commit 2ce25587cdc6a62388033c5635ea0b6122e416bb
+Merge: c008fb3 76c1d76
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Jul 21 14:36:06 2020 -0300
+
+    Merge pull request #257 from xhochy/rebuild-icu67
+
+commit 76c1d761a6fade61437ff29172e45e49068a6215
+Author: Uwe L. Korn <uwe.korn@quantco.com>
+Date:   Tue Jul 21 18:47:18 2020 +0200
+
+    Remove icu from direct dependencies
+
+commit c9c812020af7d11dad0423c140955971968b6567
+Author: Uwe L. Korn <uwe.korn@quantco.com>
+Date:   Tue Jul 21 18:42:41 2020 +0200
+
+    Rebuild 3.3.0 with icu 67
+
+commit c008fb386bd05b28c123ed51f171586acce78868
+Merge: efed417 f98ed96
+Author: Ryan May <rmay31@gmail.com>
+Date:   Sun Jul 19 21:23:32 2020 -0600
+
+    Merge pull request #254 from regro-cf-autotick-bot/3.3.0_hf2dd77
+    
+    matplotlib v3.3.0
+
+commit f98ed963116e91eff3d83e0b98a5914aad7fd5e8
+Author: Ryan May <rmay@ucar.edu>
+Date:   Sun Jul 19 16:15:15 2020 -0600
+
+    Add patch to fix build against PyPy
+
+commit 5c07edaafa3e46391f2e8c893521e0d785dd69eb
+Author: Isuru Fernando <isuruf@gmail.com>
+Date:   Sun Jul 19 01:28:12 2020 -0500
+
+    numpy 1.15 is not built for py38
+
+commit b383c11d28d3add7bf9b096f42ee127a15417bb6
+Author: conda-forge-linter <github-actions@email.com>
+Date:   Sun Jul 19 06:15:06 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.19.2, conda-smithy 3.7.4, and conda-forge-pinning 2020.07.18.20.56.00
+
+commit 65aef065abd844454651c3edafd607e7742e5b24
+Author: Isuru Fernando <isuruf@gmail.com>
+Date:   Sun Jul 19 01:13:31 2020 -0500
+
+    Bump numpy version for x86 cpython only
+    
+    Rest is global pinning
+
+commit 8b832dc07eebb790f9d882ea9d07ddafb0304805
+Author: Ryan May <rmay@ucar.edu>
+Date:   Sat Jul 18 17:33:32 2020 -0600
+
+    Tweak numpy pinning to >=1.15
+
+commit e5cf740d15fa381f97960a51b26dbf1f3c7e4833
+Author: Ryan May <rmay@ucar.edu>
+Date:   Sat Jul 18 16:59:56 2020 -0600
+
+    MNT: Re-rendered with conda-build 3.18.11, conda-smithy 3.7.4, and conda-forge-pinning 2020.07.18.20.56.00
+
+commit 758f786d81c21750da4a4352467623b8136a693c
+Author: Ryan May <rmay@ucar.edu>
+Date:   Sat Jul 18 16:54:36 2020 -0600
+
+    Try specifying numpy for host as 1.15.*
+
+commit 3edc1e07a970eff63b66c460fa5f3a4eb010c0a7
+Author: Ryan May <rmay@ucar.edu>
+Date:   Sat Jul 18 15:54:59 2020 -0600
+
+    Enable use of system freetype
+
+commit 5281ae4a76789bb32e2c3f5b90b87de49f79e19e
+Author: Ryan May <rmay@ucar.edu>
+Date:   Sat Jul 18 15:54:34 2020 -0600
+
+    Remove unneeded handling of static libraries on windows
+    
+    Matplotlib no longer depends on these.
+
+commit ecda4b1f2b9043967ec0cb0f479a803a5aea9f3e
+Author: conda-forge-linter <github-actions@email.com>
+Date:   Sat Jul 18 00:08:21 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.19.2, conda-smithy 3.7.4, and conda-forge-pinning 2020.07.17.17.28.25
+
+commit d76605537009b58338b90a4717717f17ac0cb795
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Fri Jul 17 20:04:38 2020 -0400
+
+    MNT: try not pinning numpy?
+
+commit e4c438f6cee7ef1f2fe052b2be14dea512f79d07
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Fri Jul 17 19:54:39 2020 -0400
+
+    BLD: pin numpy correctly
+    
+    https://conda-forge.org/docs/maintainer/knowledge_base.html#linking-numpy
+
+commit 9b42edb9c6b730f4c3b145da8066713cb34810f7
+Author: conda-forge-linter <github-actions@email.com>
+Date:   Fri Jul 17 23:47:48 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.19.2, conda-smithy 3.7.4, and conda-forge-pinning 2020.07.17.17.28.25
+
+commit d67cd07d8646addf6f1a6205e4405d3293a5c4c2
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Fri Jul 17 19:44:54 2020 -0400
+
+    Revert "Merge pull request #251 from regro-cf-autotick-bot/rebuild-icu67-0-1_hc131c5"
+    
+    This reverts commit efed4170042d80a187dba5ee8cde1d0076192437, reversing
+    changes made to d736a10c11046c4859197eb721447de67e3243c9.
+
+commit 22cc2eb91c124858d689bb605e888f6f5c4c5aeb
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Fri Jul 17 19:43:08 2020 -0400
+
+    MNT: attempt to force a newer version of osx
+
+commit 39db6440fb008497cc7377576a2cd87c90924624
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Thu Jul 16 21:23:36 2020 -0400
+
+    MNT: update dependencies
+
+commit f2fb13bb7a36f5f258c083ee49e5f8af93b94890
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Thu Jul 16 21:03:27 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.19.2, conda-smithy 3.7.4, and conda-forge-pinning 2020.07.15.18.18.04
+
+commit 24da98434ad8e204d76ff8f8974fae95a1222233
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Thu Jul 16 21:03:10 2020 +0000
+
+    updated v3.3.0
+
+commit efed4170042d80a187dba5ee8cde1d0076192437
+Merge: d736a10 eb9dc76
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Mon Jul 6 23:12:59 2020 -0400
+
+    Merge pull request #251 from regro-cf-autotick-bot/rebuild-icu67-0-1_hc131c5
+    
+    Rebuild for icu67
+
+commit eb9dc769be826d0b26e2dccc2e0f6f5368904da8
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Tue Jul 7 00:43:50 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.19.2, conda-smithy 3.7.4, and conda-forge-pinning 2020.07.06.18.43.00
+
+commit 62c5b7def6c5878444906c5ed1dbef09b1b4358f
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Tue Jul 7 00:43:32 2020 +0000
+
+    Rebuild for icu67
+
+commit d736a10c11046c4859197eb721447de67e3243c9
+Merge: f37cab6 dff9fac
+Author: Thomas A Caswell <tcaswell@bnl.gov>
+Date:   Mon Jul 6 16:28:20 2020 -0400
+
+    Merge pull request #247 from isuruf/pypy
+    
+    Add pypy builds
+
+commit dff9fac59cb0df86d9bcb183cff275c8188949a2
+Author: Isuru Fernando <isuruf@gmail.com>
+Date:   Mon Jul 6 01:44:38 2020 -0500
+
+    Update build_base.bat
+
+commit 7d05b34b2d7ce047b9ce6fad3f74350b242af0a3
+Author: Isuru Fernando <isuruf@gmail.com>
+Date:   Mon Jul 6 00:33:39 2020 -0500
+
+    Update meta.yaml
+
+commit 9e8f0bcd46c1231b05b7dffbfd5c02aec27f1b88
+Author: Isuru Fernando <isuruf@gmail.com>
+Date:   Mon Jul 6 00:12:54 2020 -0500
+
+    Skip mpl_sample_data on pypy as it's noarch
+
+commit 5d00eed5bc1fced46193c92fa613cf5347337f25
+Author: Isuru Fernando <isuruf@gmail.com>
+Date:   Mon Jul 6 04:12:03 2020 +0000
+
+    SPDX license
+
+commit 657801e8ea816da0b5598a3550b49cca424558dd
+Author: conda-forge-linter <github-actions@email.com>
+Date:   Mon Jul 6 04:13:54 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.19.2, conda-smithy 3.7.4, and conda-forge-pinning 2020.07.05.20.11.47
+
+commit 20dcddabe03c0052d06e4a2c4975cf7af4e78845
+Author: Isuru Fernando <isuruf@gmail.com>
+Date:   Mon Jul 6 04:08:55 2020 +0000
+
+    Add pypy builds
+
+commit f37cab6231e746cc0781070552defdeaf12475dd
+Merge: 3e000db a2dc029
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Jun 19 11:13:31 2020 -0300
+
+    Merge pull request #244 from regro-cf-autotick-bot/3.2.2_h20c41a
+
+commit a2dc029eddad30854dcbe9273f8833c81e34994a
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Wed Jun 17 05:39:44 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.19.2, conda-smithy 3.7.3, and conda-forge-pinning 2020.06.16.21.09.39
+
+commit 136d74ddc99aa841915ff3463cac4f7c9410945d
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Wed Jun 17 05:38:55 2020 +0000
+
+    updated v3.2.2
+
+commit 3e000db7f42820b62186918ecb58ccc2daa2ee14
+Author: Matthew R Becker <becker.mr@gmail.com>
+Date:   Mon May 18 07:53:16 2020 -0500
+
+    [ci skip] [skip ci] [cf admin skip] ***NO_CI*** admin migration CondaForgeAutomerge
+
+commit 275f7a55293941224269c717f4c00e30853eb057
+Author: conda-forge-admin <conda-forge-admin@email.com>
+Date:   Sat May 16 20:40:00 2020 +0000
+
+    [ci skip] [skip ci] [cf admin skip] ***NO_CI*** admin migration CFEP13TokensAndConfig
+
+commit 7f025ddcd39a006588f7f2756a32bf2fa299d4cd
+Merge: c2d1359 44710c8
+Author: Ryan May <rmay31@gmail.com>
+Date:   Thu Mar 19 01:05:54 2020 -0600
+
+    Merge pull request #237 from regro-cf-autotick-bot/3.2.1
+    
+    matplotlib v3.2.1
+
+commit 44710c8b596f3c2969de3a3ed2eecd92ccd5fa22
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Thu Mar 19 01:32:32 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.19.1, conda-smithy 3.6.12, and conda-forge-pinning 2020.03.16
+
+commit b66406aadfa65ddd7926ffa8a51c5a17798669b3
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Thu Mar 19 01:32:03 2020 +0000
+
+    updated v3.2.1
+
+commit c2d135936489a46a604362d1d0e67ff89f61f150
+Merge: c699387 1cdc551
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Mar 4 13:48:17 2020 -0300
+
+    Merge pull request #233 from ocefpaf/fix_214
+    
+    remove links
+
+commit 1cdc55128550bf48a48c54252b1580aff9890267
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Wed Mar 4 13:29:21 2020 -0300
+
+    fix bn and debug left-over
+
+commit 5f57d2e6d1f8b0f70f3d69c35a96e0d44148dc62
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Tue Feb 4 17:20:48 2020 -0300
+
+    remove links
+
+commit c699387e85709380669e1b2b81a0455af35ef777
+Merge: f31a82d 7a071e6
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Mar 4 10:29:15 2020 -0300
+
+    Merge pull request #234 from regro-cf-autotick-bot/3.2.0
+    
+    matplotlib v3.2.0
+
+commit 7a071e63b0eeab3fabdbdda64593cfb0ec8aa476
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Wed Mar 4 10:11:40 2020 -0300
+
+    remove noarch:generic
+
+commit 70833f5204ae5263ab4a75bb0dab43b20da69238
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Tue Mar 3 17:01:18 2020 -0500
+
+    BLD: delete other patch
+
+commit f01aea21a7f866dd2a0430e91542dd91103d2523
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Tue Mar 3 13:46:08 2020 -0500
+
+    BLD: remove patch
+
+commit 2d39d735f3b746664d3432821683155d4df3a81f
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Tue Mar 3 15:35:24 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.18.11, conda-smithy 3.6.9, and conda-forge-pinning 2020.02.20
+
+commit f86fc8314e1657145e1b5ad7aed60c76bd5e4b34
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Tue Mar 3 15:34:56 2020 +0000
+
+    updated v3.2.0
+
+commit f31a82d6bf3fb2e0bad811f57bf86f413abc64ac
+Author: conda-forge-admin <conda-forge-admin@email.com>
+Date:   Mon Mar 2 21:50:55 2020 +0000
+
+    [ci skip] [skip ci] [cf admin skip] ***NO_CI*** admin migration AutomergeAndRerender
+
+commit 2709539f675293ae299839aaf85280ab57837455
+Merge: cf03725 6f6239b
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Feb 4 08:15:11 2020 -0300
+
+    Merge pull request #230 from AnacondaRecipes/outputs_and_noarch
+    
+    move matplotlib-base content to its output, use noarch where possible
+
+commit 6f6239b31ba23ad2bb7bc1725b4b01f889f1d623
+Merge: 8d75f13 cf03725
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Feb 4 07:50:51 2020 -0300
+
+    Merge branch 'master' into outputs_and_noarch
+
+commit cf03725d1d1c44220ba04ad66ab7423ea22eece8
+Merge: 6216392 8f29958
+Author: Thomas A Caswell <tcaswell@bnl.gov>
+Date:   Sat Feb 1 19:48:22 2020 -0500
+
+    Merge pull request #231 from regro-cf-autotick-bot/3.1.3
+    
+    matplotlib v3.1.3
+
+commit 8f299589652a13c12fb60228a9140afd4d98888c
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Sun Feb 2 00:13:42 2020 +0000
+
+    MNT: Re-rendered with conda-build 3.18.11, conda-smithy 3.6.6, and conda-forge-pinning 2020.01.27
+
+commit 24395c3b54478a840983e31dce4c4e3ce4f09aa0
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Sun Feb 2 00:13:03 2020 +0000
+
+    updated v3.1.3
+
+commit 8d75f138350efd1bcea2e9269e6ce62430d741bc
+Author: Mike Sarahan <msarahan@gmail.com>
+Date:   Mon Dec 9 09:41:29 2019 -0600
+
+    move matplotlib-base content to its output, use noarch where possible
+
+commit 6216392f740e955fd5eb12cf3c2068d482c5e9c2
+Merge: 391656c 25a909c
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Nov 13 15:13:31 2019 -0300
+
+    Merge pull request #223 from hadim/aarch64
+    
+    Enable aarch64 and ppc64le builds
+
+commit 25a909c7e5da03d03b7b5ba318c375d7e14bebef
+Author: Hadrien Mary <hadrien.mary@gmail.com>
+Date:   Wed Nov 13 12:03:40 2019 -0500
+
+    Add aarch64 and ppc64le support + rerender
+
+commit 8dc85d20cd5631d0e41bb027a951ae229478b399
+Author: Hadrien Mary <hadrien.mary@gmail.com>
+Date:   Wed Nov 13 12:00:45 2019 -0500
+
+    MNT: Re-rendered with conda-build 3.18.11, conda-smithy 3.6.2, and conda-forge-pinning 2019.11.13
+
+commit 391656c46daa01bc5ce2ca4396329e6c792a58e7
+Merge: 06c99b7 89f68bd
+Author: Ryan May <rmay@ucar.edu>
+Date:   Wed Nov 6 13:13:28 2019 -0500
+
+    Merge pull request #220 from regro-cf-autotick-bot/3.1.2
+    
+    matplotlib v3.1.2
+
+commit 89f68bd27cbfdfbcb5eee808fd563db31946e9aa
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Wed Nov 6 17:17:05 2019 +0000
+
+    updated v3.1.2
+
+commit 06c99b76979d9e41ddc9fa3150c0d59297434793
+Merge: 8f2ca48 bae974b
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Nov 4 12:13:18 2019 -0500
+
+    Merge pull request #219 from jschueller/pr14891
+    
+    Backport PR #14891
+
+commit bae974bb41472fb218c786c5d7ba7770ef06dcde
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Mon Nov 4 16:48:16 2019 +0100
+
+    Backport PR #14891
+    
+    Backports https://github.com/matplotlib/matplotlib/pull/14891
+    
+    Avoids tracebacks such as:
+    
+    File "$PREFIX/lib/python3.8/site-packages/matplotlib/axes/_base.py", line 1694, in axis
+         self.set_xlim([xlim[0], xlim[0] + edge_size],
+    File "$PREFIX/lib/python3.8/site-packages/matplotlib/axes/_base.py", line 3270, in set_xlim
+         left, right = sorted([left, right], reverse=reverse)
+    TypeError: only integer scalar arrays can be converted to a scalar index
+
+commit 8f2ca48cd72f24fb138e4f990fa6a2af0b1d0412
+Merge: 5af5102 6f71778
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun Nov 3 18:39:40 2019 -0500
+
+    Merge pull request #218 from regro-cf-autotick-bot/rebuild-python3801
+    
+    Rebuild for python38
+
+commit 6f71778daecfa7d7a0a0457e6c9552cd31eb7002
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Sun Nov 3 22:22:01 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.18.11, conda-smithy 3.6.1, and conda-forge-pinning 2019.11.01
+
+commit 4d4ae5c954a0f04c68251b8aa7ce20a04302adfe
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Sun Nov 3 22:21:40 2019 +0000
+
+    bump build number
+
+commit 5af510232c2fa984e981e3eeb18128a6cab41b6d
+Merge: 0aa348d e94f093
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Jul 24 14:35:29 2019 -0300
+
+    Merge pull request #213 from regro-cf-autotick-bot/rebuildicu-64.20
+    
+    Do not merge this yet :: Rebuild for icu-64.2
+
+commit e94f0934b8d468b03ea96c62949766b928e64437
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Wed Jul 24 13:51:25 2019 -0300
+
+    MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.4.1, and conda-forge-pinning 2019.07.23
+
+commit d147eaab997e5acefd56d8298d346bd4d78c77d9
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Wed Jul 24 16:31:53 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.4.1, and conda-forge-pinning 2019.07.23
+
+commit 6caa67ff0c8a5dc9ea554775752131c30e25fe4b
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Wed Jul 24 16:31:38 2019 +0000
+
+    bump build number
+
+commit 0aa348d8d88b0d22ee67551cd166d6c556aaf879
+Merge: aef8776 188432e
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Jul 1 10:38:54 2019 -0300
+
+    Merge pull request #212 from regro-cf-autotick-bot/3.1.1
+    
+    matplotlib v3.1.1
+
+commit 188432e2361758c864dd429a0d526764dddd61d0
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Mon Jul 1 07:26:48 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.18.6, conda-smithy 3.4.0, and conda-forge-pinning 2019.06.27
+
+commit fdacb5f23acc2989e452ed5b870b2dafcab497b2
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Mon Jul 1 07:26:34 2019 +0000
+
+    updated v3.1.1
+
+commit aef8776b54d28331ac1cbb9714018b3d976ebe0c
+Merge: 70b3070 b744b62
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun May 26 12:25:25 2019 -0300
+
+    Rerender (#209)
+    
+    Rerender
+
+commit b744b62c2ca5fc598616057a6ab00c77a0b015eb
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Sun May 26 12:08:56 2019 -0300
+
+    MNT: Re-rendered with conda-build 3.18.1, conda-smithy 3.3.4, and conda-forge-pinning 2019.05.26
+
+commit 82d3c37860ebd0e11c7b3804b1f5e966c982ca8a
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Sun May 26 12:08:54 2019 -0300
+
+    remove min numpy
+
+commit 70b307005d553ec5ce25169e5ebdca317c18d88d
+Merge: 8add5fa b669d08
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sat May 18 09:07:58 2019 -0300
+
+    matplotlib v3.1.0 (#207)
+    
+    matplotlib v3.1.0
+
+commit b669d085ddb67b09eb2096ab0e22a7f8ce942a59
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Sat May 18 08:50:33 2019 -0300
+
+    try pip
+
+commit 7717e7a923ca345e5c512b0ba944bab3a763deb1
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Sat May 18 08:50:22 2019 -0300
+
+    refresh patch
+
+commit a7aa4bf674b107ea9e0149f9a75c735d21fb9bc2
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Sat May 18 02:23:52 2019 +0000
+
+    updated v3.1.0
+
+commit 8add5fa4a1d18fd0cf263d1e597c2cb47bc4b0eb
+Merge: 7bb670b 2308b8b
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Apr 22 15:42:36 2019 -0300
+
+    Rerender (#204)
+    
+    Rerender
+
+commit 2308b8bbe2707a9be46d21d73950ef97a8f678d6
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Mon Apr 22 14:22:32 2019 -0300
+
+    bump
+
+commit a17126df5dda3287c21399a0c76011355f917345
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Mon Apr 22 14:22:26 2019 -0300
+
+    MNT: Re-rendered with conda-build 3.17.8, conda-smithy 3.3.3, and conda-forge-pinning 2019.04.18
+
+commit 7bb670b5fe33cb917a532c90991fc08eb42fbb11
+Merge: 08bc928 2123d3b
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Feb 26 08:48:25 2019 -0300
+
+    Merge pull request #201 from regro-cf-autotick-bot/3.0.3
+    
+    matplotlib v3.0.3
+
+commit 2123d3b2ae56ddbfb8f5b299376a73c8200b5f74
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Tue Feb 26 05:26:08 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.17.8, conda-smithy 3.2.14, and conda-forge-pinning 2019.02.24
+
+commit df4623af4e557f7383eb4d79ac80a314e0ee28e1
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Tue Feb 26 05:25:56 2019 +0000
+
+    updated v3.0.3
+
+commit 08bc9282bb815e646617b28a94c85b6bc9ac31d3
+Merge: 3227e32 d9a2209
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Jan 30 09:32:56 2019 -0200
+
+    Merge pull request #196 from hmaarrfk/patch-1
+    
+    fix numpy dependenc and cleanup recipe.
+
+commit d9a22096560f826a2de524426bd2b574fe3348bc
+Author: Mark Harfouche <mark.harfouche@gmail.com>
+Date:   Tue Jan 29 08:44:05 2019 -0500
+
+    Update meta.yaml.
+
+commit 8165df6b8833391f2eb2b98839ea57cb71dc1329
+Author: Mark Harfouche <mark.harfouche@gmail.com>
+Date:   Sat Jan 26 11:55:44 2019 -0500
+
+    Remvoe cdt from test
+
+commit 617cde572f09c55e3e7f94be63d72dd2b8a51fb7
+Author: Mark Harfouche <mark.harfouche@gmail.com>
+Date:   Sat Jan 26 11:46:22 2019 -0500
+
+    MNT: Re-rendered with conda-build 3.17.7, conda-smithy 3.2.10, and conda-forge-pinning 2019.01.21
+
+commit d79de7f9253266cd521354ee34079352ddde08a2
+Author: Mark Harfouche <mark.harfouche@gmail.com>
+Date:   Thu Jan 24 23:21:08 2019 -0500
+
+    Update meta.yaml
+
+commit d14e5db50cc8b4560ffa857fad7750dcb64a3576
+Author: Mark Harfouche <mark.harfouche@gmail.com>
+Date:   Thu Jan 24 23:11:36 2019 -0500
+
+    add mesa-libGL to yum_requirements.txt
+
+commit e1b1250b799f65a9378b2c5a277aeb3ab99f75fd
+Author: Mark Harfouche <mark.harfouche@gmail.com>
+Date:   Thu Jan 24 09:39:18 2019 -0500
+
+    MNT: Re-rendered with conda-build 3.17.7, conda-smithy 3.2.9, and conda-forge-pinning 2019.01.21
+
+commit 3f5123f641bd666400cc55fe85d6987914829073
+Author: Mark Harfouche <mark.harfouche@gmail.com>
+Date:   Thu Jan 24 09:32:28 2019 -0500
+
+    move things around
+
+commit ccfd649c8c2be0ba5eff88ce2c0e0b4f9c4d5fb3
+Author: Mark Harfouche <mark.harfouche@gmail.com>
+Date:   Thu Jan 24 09:19:10 2019 -0500
+
+    numpy 1.11 and cycler 0.10
+
+commit 4120164b1b0d79ac4b16a9b7fd2849c9c2aee441
+Author: Mark Harfouche <mark.harfouche@gmail.com>
+Date:   Thu Jan 24 08:26:51 2019 -0500
+
+    Update meta.yaml
+
+commit 38dcf3ada98236389700cfaacd5cc45dbf21710a
+Author: Mark Harfouche <mark.harfouche@gmail.com>
+Date:   Thu Jan 24 08:04:18 2019 -0500
+
+    Update meta.yaml
+
+commit ec30390fdbd04cc0a1f8f6a49207b40170b19cc2
+Author: Mark Harfouche <mark.harfouche@gmail.com>
+Date:   Thu Jan 24 08:02:29 2019 -0500
+
+    remove the whole requirements section for the phony package.
+
+commit da000393e6949f2f73db691057e5eec48f21e3db
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Thu Jan 24 12:59:25 2019 +0000
+
+    MNT: Re-rendered with conda-build 3.17.7, conda-smithy 3.2.9, and conda-forge-pinning 2019.01.21
+
+commit d1efab62659bd19d7b876e7d49cc930cbfaca347
+Author: Mark Harfouche <mark.harfouche@gmail.com>
+Date:   Thu Jan 24 07:46:03 2019 -0500
+
+    fix numpy dependency, remove cycler from host deps
+
+commit 3227e32f57760b4e27ce1bda0f35ae721a806138
+Merge: e8f87c7 fc55778
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Nov 12 11:52:19 2018 -0200
+
+    Merge pull request #191 from ocefpaf/mpl-data
+    
+    Mpl data
+
+commit fc55778a02b42f4aa31c9daac1c5522cc50b5239
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Mon Nov 12 10:49:09 2018 -0200
+
+    fix test
+
+commit 935d4b3fe33c8ddfef69e6ff4c9d5a06e59c448d
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Mon Nov 12 10:44:37 2018 -0200
+
+    bump
+
+commit 14455ebd2450525a075153f532603abaaf6e5940
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Mon Nov 12 10:44:07 2018 -0200
+
+    MNT: Re-rendered with conda-smithy 3.1.12 and pinning 2018.10.16
+
+commit d4a74ae07f9f9ceb4f63ae3d9c3f966ed9f693b1
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Mon Nov 12 10:44:05 2018 -0200
+
+    mpl-data and fix base python dependency
+
+commit e8f87c734584b707d317669d621ed6b5340917d5
+Merge: 2576c59 c24138e
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Sat Nov 10 22:57:42 2018 -0500
+
+    Merge pull request #190 from regro-cf-autotick-bot/3.0.2
+    
+    matplotlib v3.0.2
+
+commit c24138e80b79b321298056be2d63bbc24b4a66a5
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Sat Nov 10 01:14:02 2018 +0000
+
+    MNT: Re-rendered with conda-smithy 3.1.12 and pinning 2018.11.9
+
+commit 9699febeb2a4ba11572aa58eadc61885f72349bd
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Sat Nov 10 01:13:56 2018 +0000
+
+    updated v3.0.2
+
+commit 2576c59f58c06cb0c5408b8c8585e8969c5aeb1c
+Merge: d839b49 13df7fc
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Oct 29 21:35:02 2018 -0300
+
+    Merge pull request #187 from regro-cf-autotick-bot/rebuild
+    
+    Rebuild for Python 3.7, GCC 7, R 3.5.1, openBLAS 0.3.2
+
+commit 13df7fc5f82608ff469a3258ffa380382befc99d
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Mon Oct 29 23:15:42 2018 +0000
+
+    MNT: Re-rendered with conda-smithy 3.1.12 and pinning 2018.10.16
+
+commit 68958174b3a61bfdedd302cf85776698f32e39c0
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Mon Oct 29 23:15:36 2018 +0000
+
+    bump build number
+
+commit d839b49911b56d81a00edc29f38461ab7061df0f
+Merge: b46ddd6 8896559
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Oct 29 20:02:27 2018 -0300
+
+    Merge pull request #186 from ocefpaf/fix_rerendering
+    
+    Fix re-rendering
+
+commit 88965594b1a0302bbe00844a9fc0d7c96e40c697
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Mon Oct 29 18:23:55 2018 -0300
+
+    fix indentation
+
+commit cb99b4436ed2f25f0521947c6fa38141b436e107
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Mon Oct 29 18:18:41 2018 -0300
+
+    MNT: Re-rendered with conda-smithy 3.1.12 and pinning 2018.10.16
+
+commit 96bb1a4f020bb3bedb28970615aec8594a45d1e7
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Mon Oct 29 18:18:39 2018 -0300
+
+    fix #184
+
+commit 503d4360a70767d9dc29313932b672cbdbd25067
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Mon Oct 29 18:10:26 2018 -0300
+
+    MNT: Re-rendered with conda-smithy 3.1.12 and pinning 2018.10.16
+
+commit b006e053944785054c262fbcca42bb6db8fdf398
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Mon Oct 29 18:10:24 2018 -0300
+
+    fix re-rendering
+
+commit b46ddd67f3821cddf93db16a90dfebfd58a1369c
+Merge: 90e1c98 ed7fb49
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Oct 25 15:26:11 2018 -0300
+
+    Merge pull request #183 from regro-cf-autotick-bot/3.0.1
+    
+    matplotlib v3.0.1
+
+commit ed7fb495d9d44af217bf267a8cafac93ddd3b5c6
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Thu Oct 25 16:19:47 2018 +0000
+
+    updated v3.0.1
+
+commit 90e1c988d0ef05bd225cdc8c0e994c280a051c78
+Merge: 8528e3c b22955f
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Oct 3 09:19:44 2018 -0300
+
+    Merge pull request #178 from marcelm/metapackage
+    
+    Split into matplotlib and matplotlib-base
+
+commit b22955f3a92c10db44b85a0c762d12f155c5c48e
+Author: Marcel Martin <marcel.martin@scilifelab.se>
+Date:   Thu Sep 20 20:53:39 2018 +0200
+
+    Attempt to fix build failure on AppVeyor
+
+commit b6af2ec447c5ba43511b7b07e7b2ad0c374d4006
+Author: Marcel Martin <marcel.martin@scilifelab.se>
+Date:   Thu Sep 20 20:50:27 2018 +0200
+
+    Rename to matplotlib-base
+
+commit 17a761452a0ff0b40eb68b5a9ad67712d32f454b
+Author: Marcel Martin <marcel.martin@scilifelab.se>
+Date:   Wed Sep 19 14:48:09 2018 +0200
+
+    Split into matplotlib and matplotlib-core
+    
+    See also the discussion at
+    https://github.com/conda-forge/matplotlib-feedstock/issues/2
+
+commit 8528e3c90821ca4513b060f48db14f17dd5cb204
+Merge: 102ce5f 9324377
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Sep 20 08:49:56 2018 -0300
+
+    Merge pull request #177 from tacaswell/no_pytz
+    
+    MNT: does not actually depend on pytz anymore
+
+commit 9324377e893a72af32703c5aa5995f9981fdef0f
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Tue Sep 18 20:09:28 2018 -0400
+
+    MNT: does not actually depend on pytz anymore
+
+commit 102ce5f3b9d7bf1412a703e88af903ec99f11ae0
+Merge: 02eb264 6344699
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Sep 18 10:57:50 2018 -0300
+
+    Merge pull request #175 from tacaswell/v3.0.0
+    
+    REL: v3.0.0
+
+commit 6344699d9984e60bcae745ca21443f13c38e1ef8
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Tue Sep 18 13:01:00 2018 +0000
+
+    MNT: Re-rendered with conda-smithy 3.1.12 and pinning 2018.09.17
+
+commit 52e6d87588044e4bd98b924d82ef95045c7702c9
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Sep 18 10:00:00 2018 -0300
+
+    why not ;-p
+
+commit c4e77206eddd4cc5646fcc79cbbbeb6b3ba1d3a9
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Sep 18 09:52:31 2018 -0300
+
+    Delete cfg_qt5agg.patch
+
+commit 227af4f9a1f5d7aa526685c01aab4562bff40e73
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Sep 18 09:52:20 2018 -0300
+
+    Delete osx-frame.patch
+
+commit 523d777bba7c2f74ca46a7cdd67034b5d0a6dd84
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Tue Sep 18 12:51:14 2018 +0000
+
+    MNT: Re-rendered with conda-smithy 3.1.12 and pinning 2018.09.17
+
+commit a44ec6f994b8f55ec5b3b5cb077a13e6f34655eb
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Sep 18 09:50:21 2018 -0300
+
+    Update meta.yaml
+
+commit 621b93d7d8c5d474c00141c8919ae6e07fa3704e
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Tue Sep 18 00:04:08 2018 -0400
+
+    REL: v3.0.0
+
+commit 02eb264130128809cd4fccf2be5438f9b307aef4
+Merge: cd867cd ceda006
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sat Aug 25 17:02:01 2018 -0700
+
+    Merge pull request #172 from ocefpaf/py37
+    
+    Add Python 3.7
+
+commit ceda006026474042c9c9e21d28e1d157140fc537
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Sat Aug 25 18:17:27 2018 -0500
+
+    MNT: Re-rendered with conda-smithy 3.1.12 and pinning 2018.08.21
+
+commit cd867cd9e17930ec24097b0f569c7890d8a07b4f
+Merge: c24d0a8 3c884a1
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Aug 10 09:04:35 2018 -0300
+
+    Merge pull request #170 from ocefpaf/update_checksum
+    
+    update checksum
+
+commit 3c884a1b7928061bfb5a6f962bf119b9f22b3c4a
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Fri Aug 10 08:34:37 2018 -0300
+
+    update checksum
+
+commit c24d0a8966779ddd281c8f6191e62688b57fd7d7
+Merge: 0fbbb23 7f8857f
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Aug 10 08:28:44 2018 -0300
+
+    Merge pull request #168 from regro-cf-autotick-bot/2.2.3
+    
+    matplotlib v2.2.3
+
+commit 7f8857faa16de6d04bb6c99f587869c2da55362e
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Fri Aug 10 03:13:52 2018 +0000
+
+    updated v2.2.3
+
+commit 0fbbb2373bc84b91f6c515191c33f75b58ec3e6b
+Merge: f829b43 b8a2d04
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Aug 9 08:24:13 2018 -0300
+
+    Merge pull request #167 from regro-cf-autotick-bot/compiler_migration2
+    
+    Migrate to Jinja2 compiler syntax
+
+commit b8a2d04c13a1389694a23490413fb48f338b7930
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Aug 8 21:01:52 2018 -0300
+
+    Update meta.yaml
+
+commit c5c015acb30f22369330224c33048e766c8a7755
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Tue Aug 7 23:26:12 2018 +0000
+
+    MNT: Re-rendered with conda-smithy 3.1.10 and pinning 2018.08.05
+
+commit 3c3185700e6ebb59d4dffa4aab579f41d47db924
+Author: regro-cf-autotick-bot <circleci@cf-graph.regro.github.com>
+Date:   Tue Aug 7 23:26:04 2018 +0000
+
+    migrated to Jinja2 compiler syntax build
+
+commit f829b4334e1cef3ad87adde668d5f8d1a5b9f735
+Author: Travis CI User <travis@example.org>
+Date:   Sat Aug 4 16:58:00 2018 +0000
+
+    [ci skip] [skip ci] Update anaconda token
+
+commit 27badb55380f66914fdd374fb0a59dbead2bf459
+Merge: ed1720d cff8380
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu May 31 19:33:48 2018 -0300
+
+    Merge pull request #158 from saraedum/patch-1
+    
+    Do not require setuptools twice
+
+commit cff838017aa199ad24cc2476e24910634be8d4f8
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu May 31 19:33:08 2018 -0300
+
+    Update meta.yaml
+
+commit 83121cd6c93a404ce0e738550e444c153b563dc4
+Author: Julian Rüth <julian.rueth@fsfe.org>
+Date:   Thu May 31 23:52:13 2018 +0200
+
+    Do not require setuptools twice
+    
+    I am a bit surprised that this needs setuptools at runtime, but I guess there is no point in stating that twice?
+
+commit ed1720d4cda7201dcf4241e7f9b4754889e83d53
+Merge: 080c7f5 96a5589
+Author: Ryan May <rmay31@gmail.com>
+Date:   Thu Mar 29 15:19:12 2018 -0600
+
+    Merge pull request #154 from jakirkham-feedstocks/py2k_backports_only
+    
+     Require backports.functools_lru_cache on Python 2
+
+commit 96a5589101892623112b7d7549253ad9360655d8
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Thu Mar 22 19:32:59 2018 -0400
+
+    Bump build number to 1
+    
+    Rebuild now that a backport dependency has been dropped from Python 3.
+
+commit 6d06e0fa45799954e97ddae3314dfba0e3deec46
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Thu Mar 22 19:31:28 2018 -0400
+
+    Require backports.functools_lru_cache on Python 2
+    
+    Previously `backports.functools_lru_cache` was being installed on Python
+    2 and Python 3. However, as it is a backports package, it should not be
+    needed on Python 3, which has also been confirmed. This adds a selector
+    to only require `backports.functools_lru_cache` on Python 2 and not
+    Python 3.
+
+commit 080c7f557ebba7da1f828021b15583f63cc6b09b
+Merge: d6d9c60 0411f7e
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Sat Mar 17 14:38:17 2018 -0400
+
+    Merge pull request #152 from tacaswell/v2.2.2
+    
+    REL: bump for 2.2.2
+
+commit 0411f7e1102172f82d33c1fdd52bffca0291640d
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Fri Mar 16 18:01:24 2018 -0400
+
+    REL: bump for 2.2.2
+
+commit d6d9c60f08f611b35e46e4cfb1713ec5160af4e9
+Merge: 4abf3fd 2e226af
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Mar 6 07:53:59 2018 -0300
+
+    Merge pull request #148 from ocefpaf/remove_test
+    
+    Remove matplotlib._cntr commented out line
+
+commit 2e226afa9724b1d6f133bdc27fbf5623bc22d865
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Tue Mar 6 07:53:19 2018 -0300
+
+    remove test [skip appveyor][skip ci]
+
+commit 4abf3fdf5ca156085f85d9abebc8654894700016
+Merge: 4c37dc4 131acf2
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Mon Mar 5 17:29:17 2018 -0500
+
+    Merge pull request #146 from ocefpaf/update_to_2.2.0
+    
+    Update to 2.2.0
+
+commit 131acf2482d734c7b8ab21cd475fc8e734814918
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Mon Mar 5 09:53:05 2018 -0300
+
+    update to 2.2.0
+
+commit 4c37dc411032b0b9714a22347e166ff65d81f0e9
+Merge: 11faeed f717683
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Jan 18 11:39:56 2018 -0200
+
+    Merge pull request #140 from tacaswell/rel_v2.1.2
+    
+    REL: bump for v2.1.2
+
+commit f71768381952850ee8b33bd893c9ed2871632e50
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Jan 18 10:55:07 2018 -0200
+
+    update checksum, again...
+
+commit bfe735563f5d9a0dfdc37259389f87fada61d74a
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Jan 18 10:49:40 2018 -0200
+
+    update checksum
+
+commit e60954a0ca6a4933c09f77560d04f18c7efcca5c
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Thu Jan 18 05:45:01 2018 +0000
+
+    MNT: Re-rendered with conda-smithy 2.4.5
+
+commit 585e1df53ba3cea531f87f8558844607b108195b
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Wed Jan 17 23:51:08 2018 -0500
+
+    REL: bump for v2.1.2
+
+commit 11faeed41cd575169dee0d1372e4c1fa2cb61d37
+Merge: 3850660 d73aa5d
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Mon Dec 18 10:31:04 2017 -0500
+
+    Merge pull request #137 from jakirkham-feedstocks/rebuild_wo_libgcc
+    
+    Bump to build number 2
+
+commit d73aa5db7a86bc4022b5e83a040ba6a562be0568
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Mon Dec 18 09:35:30 2017 -0500
+
+    Bump to build number 2
+    
+    Appears the some new `gcc` libraries slipped in during the build of
+    `matplotlib`. The result is that it got linked to these and became
+    dependent on them. Looks like the cause is some packages coming from
+    `defaults`. Namely `python` and `readline`. This is due to the fact that
+    `python` 2.7 and `python` 3.5 were not dependent on `readline` 7.0 yet.
+    However that has since been fixed. Hence this should be resolved with a
+    simple rebuild.
+
+commit 3850660f460e291d8c30803e6e8adc796dfe8f34
+Merge: ebdea7f 1627fe0
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Dec 14 10:17:10 2017 -0200
+
+    Merge pull request #135 from ocefpaf/update_pins
+    
+    update pins
+
+commit 1627fe01e3b8ab4a9d4a0be24f843b2eb64a301a
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Tue Dec 12 12:50:38 2017 -0200
+
+    update pins
+
+commit ebdea7fe6df866fd86878674d5494aee1036727b
+Merge: 3761563 ba2c868
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Dec 11 12:01:22 2017 -0200
+
+    Merge pull request #134 from tacaswell/rel_2.1.1
+    
+    REL: bump for v2.1.1
+
+commit ba2c868276656f28575d37a6151b0d253106333e
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Mon Dec 11 00:06:07 2017 -0500
+
+    REL: bump for v2.1.1
+
+commit 3761563aeada2d04971c4b4ce4d2015a63147fa9
+Merge: 9a53f4c 3b1a2d6
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun Nov 5 17:58:26 2017 -0200
+
+    Merge pull request #133 from ocefpaf/update_pins
+    
+    update pins
+
+commit 3b1a2d6adaadfa46a6791b9cad558c7aaf2ab740
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Sun Nov 5 09:17:27 2017 -0200
+
+    update pins
+
+commit 9a53f4ccdcd4319a29307d00d052a467965605b6
+Merge: 4fb7bec bb8a3b7
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Oct 4 07:55:48 2017 -0300
+
+    Merge pull request #132 from tacaswell/v2.1
+    
+    V2.1
+
+commit bb8a3b7543eaa6e44be31694db7aea6d5f21a4fa
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Fri Sep 1 08:53:41 2017 -0300
+
+    add functools_lru_cache
+
+commit b53afc9e04716230feeda8acd29afa721c9fd196
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Fri Sep 1 08:47:06 2017 -0300
+
+    REL: update for v2.1.0
+
+commit 4fb7bec6f926b1e7b1f425cf0c9a8caf001f2710
+Merge: fdabde8 b3f788d
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun Sep 17 12:26:56 2017 -0300
+
+    Merge pull request #130 from ocefpaf/rerender
+    
+    Rerender
+
+commit b3f788d9371abbc88e03d14b15a734bcf0bf111e
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Fri Sep 15 18:41:17 2017 -0300
+
+    fix comment
+
+commit 61e355852c31b073c9f92d34af6eca0fdf276a62
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Fri Sep 15 18:41:13 2017 -0300
+
+    rerender
+
+commit fdabde831eca55ac2b9fc7d6e71edf6283b5bacd
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Sat Aug 26 18:48:24 2017 +0000
+
+    [ci skip] [skip ci] Update anaconda token
+
+commit 408d3e1cc139a35bb59a939fd6da763b3988254c
+Merge: 8769b35 58d50c6
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Aug 8 10:31:14 2017 -0300
+
+    Merge pull request #124 from ocefpaf/py34
+    
+    Force add PY34
+
+commit 58d50c6ac6695f3bc8cdad892d4a4e9ab532dd3a
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Tue Aug 8 09:12:11 2017 -0300
+
+    let conda download py34 using an existing one
+
+commit 5b3ab53c3f46a4cebd83e45b2c5c34ba6ac33363
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Tue Aug 8 08:58:32 2017 -0300
+
+    force add py34
+
+commit 8769b354a827dc508c70a3c2de3be210175f1254
+Merge: 24d9cee 41a6abb
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Jul 27 11:18:25 2017 -0300
+
+    Merge pull request #122 from ocefpaf/update_pinning
+    
+    Update pinning
+
+commit 41a6abb97882f3c55eb5e75a82c90bb80318836e
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Wed Jul 26 15:01:48 2017 -0300
+
+    rerender with auto
+
+commit 336b3c32aac569715fea63b0b67fda4e3b282682
+Author: Filipe Fernandes <ocefpaf@gmail.com>
+Date:   Wed Jul 26 15:01:44 2017 -0300
+
+    update pinning
+
+commit 24d9cee3e4a2ab6d51bc7e619a1fc76e6abefabd
+Merge: d20f4c7 7dd7ccb
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Sat Jun 10 02:43:35 2017 -0400
+
+    Merge pull request #120 from jakirkham/use_np_113
+    
+    Add NumPy 1.13
+
+commit 7dd7ccb0759509f280d5ef189bfd00090d80cd56
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Fri Jun 9 17:44:28 2017 -0400
+
+    MNT: Re-rendered with conda-smithy 2.3.1
+    
+    Re-render to add NumPy 1.13 support.
+
+commit aa770113256d5a1dd811a833fceae3615896551d
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Fri Jun 9 17:41:48 2017 -0400
+
+    MNT: Re-rendered with conda-smithy 2.3.1
+
+commit d20f4c72565e031d3155acfccb24ea76fa78a581
+Merge: d71b3b1 07575fc
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed May 10 09:14:13 2017 -0300
+
+    Merge pull request #119 from tacaswell/v2.0.2
+    
+    REL: 2.0.2
+
+commit 07575fc5d20ee1c0c8b10975d313b05b7c83a73e
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Tue May 9 22:17:12 2017 -0400
+
+    REL: 2.0.2
+
+commit d71b3b1f43c4db8c6760f84ec279c6f335a0bf94
+Merge: b0a7851 59437a4
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue May 2 07:58:49 2017 -0300
+
+    Merge pull request #118 from tacaswell/rel_2.0.1
+    
+    REL: bump to version 2.0.1
+
+commit 59437a4b695025a3ec4199d536426be5af52a185
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Mon May 1 22:31:36 2017 -0400
+
+    MNT: reset build numer
+
+commit 22b0ad4026660a7a6852de6a552ddebcc1b034dc
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Mon May 1 22:20:25 2017 -0400
+
+    REL: bump to version 2.0.1
+
+commit b0a7851b372f5f94b374ed5439a8e9c24157a354
+Merge: 19f48dc ee3dfc9
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Mar 23 18:32:50 2017 -0300
+
+    Merge pull request #115 from ocefpaf/qt5
+    
+    Qt5
+
+commit ee3dfc9ad3b457e0ec84d1461b6891d8e7a5f960
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Thu Mar 23 15:23:45 2017 -0300
+
+    rerender with auto
+
+commit 2b55584ccd927a1bd9d5bd870a832cede0d286cc
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Mar 20 14:43:37 2017 -0300
+
+    qt5 on win + more metadata
+
+commit 3b58e6758f804c39308b5cf985b8cf8ec7107f48
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Mar 20 14:25:11 2017 -0300
+
+    remove unnecessary workaround
+
+commit b02526f72f87a6b37bb81e5c9bff5bde2f3303bd
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Mar 20 14:23:10 2017 -0300
+
+    remove unnecessary patch
+
+commit 1454565e9980e54ee2c2c90bd70bbf222ff8ab9c
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Mar 20 13:59:35 2017 -0300
+
+    pin to qt 5.6.*
+
+commit 19f48dc6106f183d575e9a255ac92b10f6853aa2
+Merge: 330b3fd 462aa5b
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Tue Mar 14 22:24:33 2017 -0400
+
+    Merge pull request #112 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit 462aa5b2ac6a7d91862afff3a684f94fe02791ca
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Fri Mar 3 01:37:11 2017 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 2.1.1.
+
+commit 330b3fd83048e048e95656f3a9fa90c572044aea
+Merge: 78c740d 7c40878
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun Feb 5 18:43:53 2017 -0300
+
+    Merge pull request #109 from ocefpaf/update_icu_pin
+    
+    Update ICU pin
+
+commit 7c4087810b456ce79b708392df4b36ad7b011c75
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Feb 1 16:04:39 2017 -0300
+
+    Update ICU pin
+
+commit 78c740d0be637e56aa7c0d6b30fc6d04230c2aa3
+Merge: 75ad59d 540777b
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Jan 25 14:22:25 2017 -0300
+
+    Merge pull request #107 from ocefpaf/fix_matrix
+    
+    Re-render with auto
+
+commit 540777b0c7c5798775aa701f22fbed8892ad6984
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Jan 25 14:06:15 2017 -0300
+
+    tornato as run time dependency only
+
+commit a0a6133d12c4d2ee5af2821ee33176c9f1023e14
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Jan 25 14:06:01 2017 -0300
+
+    single-version-externally-managed
+
+commit 68d3d5bdc5eb648818f672275aac2fd9d12c4341
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Jan 25 13:56:48 2017 -0300
+
+    rerender with auto
+
+commit 75ad59d2c236bc807e5fb538290179bdd15207f8
+Merge: 252c34f bdc16b3
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Jan 23 08:11:30 2017 -0300
+
+    Merge pull request #106 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit 252c34f059f070a9f73d219caf587a8e09647781
+Merge: 4e4b05f 2617349
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Jan 23 08:01:59 2017 -0300
+
+    Merge pull request #104 from agoodm/libpng_update
+    
+    Update libpng version to >=1.6.28
+
+commit bdc16b39b6a68d75c4703bea8cc5e4278f922e75
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Mon Jan 23 01:39:27 2017 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 2.0.0.
+
+commit 261734927e588704386e225a606929e29a18b3bf
+Author: Alex Goodman <agoodm@users.noreply.github.com>
+Date:   Wed Jan 18 15:57:37 2017 -0800
+
+    Dependency version should match for runtime
+
+commit c50dc3c8d19c5d894b5fec55aaefa6d4bed5821c
+Author: Alex Goodman <agoodm@users.noreply.github.com>
+Date:   Wed Jan 18 15:50:19 2017 -0800
+
+    Increment build number
+
+commit 0e37fd505a30fd93e6df30e0658da3b5842b22e2
+Author: Alex Goodman <agoodm@users.noreply.github.com>
+Date:   Wed Jan 18 15:48:40 2017 -0800
+
+    Require libpng>=1.6.28
+
+commit 4e4b05fc3170fde55714bb809499cbc38455c78e
+Merge: 4817f89 cb6c266
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Jan 17 07:01:53 2017 -0300
+
+    Merge pull request #102 from tacaswell/rel_2.0.0
+    
+    REL: bump version + sha for 2.0.0
+
+commit cb6c2667e64e6c8fbce493a0c5610fdfbf10bbbc
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Mon Jan 16 22:47:33 2017 -0500
+
+    REL: bump version + sha for 2.0.0
+    
+    MNT: update patch
+    
+    BLD: copy dependencies from devel branch
+    
+    MNT: third times the charm
+
+commit 4817f89d9c5bbdcbffd92b7d45f6334ae6089a50
+Merge: 78326f3 1215853
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Jan 3 06:29:14 2017 -0300
+
+    Merge pull request #99 from ocefpaf/finish_py36
+    
+    py36
+
+commit 121585399c4cca09401dd17c74b2dc9cd591d0d1
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Tue Jan 3 06:33:44 2017 -0300
+
+    py36
+
+commit 78326f313d68535d94a417f860596e26736651dd
+Merge: 10a5f35 c9b6df7
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Jan 3 05:32:45 2017 -0300
+
+    Merge pull request #96 from ocefpaf/py36
+    
+    Py36
+
+commit c9b6df77894c350b795b6595f37f1c4a35bf64e9
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Jan 2 06:32:45 2017 -0300
+
+    Re-render with auto
+
+commit 87cb4f70224aa11e037a11b3b2558cb955b9312e
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sat Dec 31 18:58:49 2016 -0300
+
+    fix identation
+
+commit 10a5f35c4337669254db252be005850247846d04
+Merge: 9cd500a 40f0798
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Dec 30 17:48:55 2016 -0300
+
+    Merge pull request #92 from dopplershift/disable-check
+    
+    ENH: Disable check for framework Python in OSX backend.
+
+commit 40f079809e01672e58420ced0d868215b19aa636
+Author: Ryan May <rmay31@gmail.com>
+Date:   Fri Dec 30 10:47:37 2016 -0700
+
+    ENH: Disable check for framework Python in OSX backend.
+    
+    Without this check, the osx backend can be used with just `python`
+    rather than requiring `pythonw`. `pythonw` still works better (window
+    comes to the front and gives a taskbar icon), but not requiring
+    `pythonw` is much less surprising to users.
+    
+    Since we now work with just python, simplify the tests.
+
+commit 9cd500a6b879d80bffd2263772804662cba2f9ee
+Merge: 8174eeb 83e4fbd
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Dec 22 09:43:19 2016 -0300
+
+    Merge pull request #90 from dopplershift/bump-build
+    
+    Bump build
+
+commit 83e4fbdb188d6d4569637a1855779a4b43fa90cd
+Author: Ryan May <rmay31@gmail.com>
+Date:   Wed Dec 21 15:54:12 2016 -0600
+
+    ENH: Add dopplershift to maintainers.
+
+commit 2e7591799c2d663efd5f99708c8ed999db0ea3f3
+Author: Ryan May <rmay31@gmail.com>
+Date:   Wed Dec 21 15:51:15 2016 -0600
+
+    MNT: Bump build number.
+    
+    PR #87 neglected to bump the build number, so no new packages were
+    actually generated.
+
+commit 8174eeb236c1b64c71b4f61c547e8323a2cdf6f1
+Merge: aef69e8 f709492
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Dec 19 19:59:46 2016 -0300
+
+    Merge pull request #87 from dopplershift/add-macosx-backend
+    
+    ENH: Re-enable the macosx backend.
+
+commit f709492a8ab9cb0c83747b8136a0172c3e498c6b
+Author: Ryan May <rmay31@gmail.com>
+Date:   Mon Dec 12 10:55:15 2016 -0700
+
+    MNT: Adjust import tests.
+    
+    Need to import pyplot/pylab with the framework build on osx. To ensure
+    this, convert the run_test.py to import tests in the recipe, since
+    that's what the useful parts (for CI at least) were doing.
+
+commit 6546c71e47a21b49d5e06e97c141deeef0d8dda4
+Author: Ryan May <rmay31@gmail.com>
+Date:   Mon Dec 12 10:55:00 2016 -0700
+
+    MNT: Add some more package metadata.
+
+commit 254ecea257380f52ed896190bdbdcd9f1772f523
+Author: Ryan May <rmay31@gmail.com>
+Date:   Fri Dec 9 13:16:50 2016 -0700
+
+    ENH: Re-enable the macosx backend.
+
+commit aef69e8012e6d383e215076f2df52f4c8a296243
+Merge: 53d38c9 5945475
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Dec 8 17:39:44 2016 -0300
+
+    Merge pull request #85 from ocefpaf/rerender
+    
+    rerender with auto no conda-build 2
+
+commit 5945475fb848deb8f131b504290d17b2b97906d3
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Thu Dec 8 14:59:28 2016 -0300
+
+    rerender with auto no conda-build 2
+
+commit 53d38c92aad85fd3f14d362edb80b2f8d01897bf
+Merge: 0d5c7e7 33b078f
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Dec 8 07:07:45 2016 -0300
+
+    Merge pull request #80 from conda-forge-admin/feedstock_version_pin_master
+    
+    MNT: Update pinned versions.
+
+commit 33b078feb08f2403dbef06d6440a8ba9338173ba
+Author: conda-forge-admin <conda-forge@googlegroups.com>
+Date:   Thu Dec 8 02:05:47 2016 +0000
+
+    MNT: Updated some of the pinned versions
+
+commit 0d5c7e719e16d0fe01987d4c88e715cd8edaced8
+Merge: 12e2436 135eb2f
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Oct 6 10:47:03 2016 -0300
+
+    Merge pull request #74 from jakirkham/re-render_1.3.2
+    
+    MNT: Re-rendered with conda-smithy 1.3.2
+
+commit 135eb2f15cd6a2779fed250014883bd344d41d49
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Thu Oct 6 02:47:21 2016 -0400
+
+    recipe: Bump build number to 2.
+
+commit 97061befe6b4ed6a0c6e0ad2d2215f0c671d57bc
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Thu Oct 6 02:47:07 2016 -0400
+
+    MNT: Re-rendered with conda-smithy 1.3.2
+
+commit 12e24367424ac1d744a4588b137d201396e92c35
+Merge: b7c303b 3a18536
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Wed Oct 5 22:25:53 2016 -0400
+
+    Merge pull request #72 from ocefpaf/pin_pyqt
+    
+    Pin pyqt (qt)
+
+commit 3a185364a34f7f09acd9cb67223c8a3c36bd7252
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Tue Oct 4 20:00:13 2016 -0300
+
+    pin pyqt/qt
+
+commit b7c303bf71afcf58b3bc14815acd8c8ba041647d
+Merge: 65bd01d d8a90cc
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Sep 9 09:45:30 2016 -0300
+
+    Merge pull request #56 from ocefpaf/v1.5.3
+    
+    V1.5.3
+
+commit d8a90ccbdfa0d2d158ef9e52ea3624dddb1fa075
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Fri Sep 9 08:31:30 2016 -0300
+
+    Bump
+    [closes #41]
+
+commit 09beb7d015a2b78f6eb708079b52ee58b0d03c40
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Fri Sep 9 08:31:25 2016 -0300
+
+    rerender
+
+commit 65bd01d350ba3fed01fc2d1d180cc4b9e34aae3e
+Merge: 3201cc1 89eaf73
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Aug 10 11:12:21 2016 -0300
+
+    Merge pull request #50 from ericdill/expose-broken-runtime
+    
+    Fix broken runtime in matplotlib. Need to include setuptools as runtime requirement for mpl_toolkits
+
+commit 89eaf73ca34f3bc806f69200e93ec34e8bd66500
+Author: Eric Dill <eric.dill@maxpoint.com>
+Date:   Wed Aug 10 10:07:07 2016 -0400
+
+    Bump the build number
+
+commit 891f082e4ba849bfdce22750df6dc6a063d386b7
+Author: Eric Dill <thedizzle@gmail.com>
+Date:   Tue Aug 9 15:22:02 2016 -0400
+
+    Remove selector for py35. This will happen for any conda-forge packaged python
+
+commit 36ac344c2dc80389319bf9196a49c6b7ec1713aa
+Author: Eric Dill <thedizzle@gmail.com>
+Date:   Tue Aug 9 15:07:01 2016 -0400
+
+    Require setuptools for py35 for matplotlib
+
+commit bd7c62c3e33e93c842222c7e199054dd02f89d28
+Author: Eric Dill <thedizzle@gmail.com>
+Date:   Tue Aug 9 15:01:37 2016 -0400
+
+    import mpl_toolkits to expose broken runtime
+
+commit 3201cc184f27b0606ee596fb3ecdbd7fc6040ff7
+Merge: d9f8b14 d85ce59
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Thu Jul 7 14:08:08 2016 +0100
+
+    Merge pull request #40 from jakirkham/use_toolchain
+    
+    Use the `toolchain` to build
+
+commit d85ce596c7272358f9989db916d892d40a5cdfbe
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Mon Jul 4 11:41:41 2016 -0400
+
+    recipe: Use the `toolchain` to build.
+
+commit d9f8b147fd4d5af544a099f796fec4a7516fd195
+Merge: f01d0f0 110f33a
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun Jul 3 16:57:50 2016 -0300
+
+    Merge pull request #38 from ocefpaf/update_sha256
+    
+    Fix sha256
+
+commit 110f33ac0caaadfbcc234293e43781026905db38
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sun Jul 3 16:25:36 2016 -0300
+
+    Fix sha256
+
+commit f01d0f0fe5889f7b4cd847293c6b620e4a9f3f42
+Merge: 7064d54 a39a837
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun Jul 3 16:05:11 2016 -0300
+
+    Merge pull request #37 from tacaswell/rel_1.5.2
+    
+    MNT: update for 1.5.2
+
+commit a39a837c41d0f292b9bd690929b218da9ee9bf80
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Thu May 26 23:00:39 2016 -0400
+
+    CI: just reduce windows patch
+
+commit 6de3053914ce2aeb36ea7907d73f44c222fd01a2
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Thu May 26 22:41:41 2016 -0400
+
+    CI: try with out windows patch
+
+commit 51d39016b5dad3bd038eca96f6d776556b003a8d
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Thu May 26 22:27:50 2016 -0400
+
+    BLD: try with out OSX patches
+
+commit cc08508bd2eaf2f9260d0f0d5cd39aecdae29344
+Author: Thomas A Caswell <tcaswell@gmail.com>
+Date:   Sun Jul 3 11:54:19 2016 -0400
+
+    MNT: update for 1.5.2
+
+commit 7064d548d639aa492a50b5648464c785b28846a2
+Merge: cc30847 d97a97a
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Jun 28 07:02:31 2016 -0300
+
+    Merge pull request #35 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit d97a97a2c308265546568f1e233ba1b86ad33bf3
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Tue Jun 28 01:35:10 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 0.10.4.
+    
+    [ci skip]
+
+commit cc3084778b666d2c6ab7918c73b3bcd50315cdfb
+Merge: 0385ea9 e19421c
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Jun 27 11:01:00 2016 -0300
+
+    Merge pull request #34 from pelson/bump_build_for_openblas
+    
+    Bump build for newer openblas.
+
+commit e19421c53583401d60d04277328440af8e61a641
+Author: pelson <pelson.pub@gmail.com>
+Date:   Mon Jun 27 13:51:04 2016 +0100
+
+    Bump build for newer openblas.
+
+commit 0385ea90a168d690d7b7da077dc35df82b406a61
+Merge: 3ed0fb9 39ec131
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Jun 24 13:10:42 2016 -0300
+
+    Merge pull request #33 from ocefpaf/bump
+    
+    bump
+
+commit 39ec131da1bace21077fc7ac6f10837f19775cd6
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Fri Jun 24 10:47:12 2016 -0300
+
+    bump
+
+commit 3ed0fb9bfa6e95d34c16ed6c25c5f221c2a85e99
+Merge: e6ab595 81eb975
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Jun 16 12:02:31 2016 -0300
+
+    Merge pull request #31 from ocefpaf/rerender
+    
+    Rerender
+
+commit 81eb97539903368a21692e394464c0e7c97079f2
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Thu Jun 16 10:59:52 2016 -0300
+
+    Fix pinnings
+
+commit f2467d99fcf30b22f0d2c4cea8603df7dd912f91
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Thu Jun 16 10:56:12 2016 -0300
+
+    rerender
+
+commit e6ab595751d852be74678b9f216a14dfff2e87ed
+Merge: 3583057 661b236
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Jun 16 10:45:43 2016 -0300
+
+    Merge pull request #29 from conda-forge-admin/feedstock_version_pin_master
+    
+    MNT: Update pinned versions.
+
+commit 661b2364956417003cac421c2abdfac19434e0b4
+Author: conda-forge-admin <conda-forge@googlegroups.com>
+Date:   Wed Jun 1 17:53:27 2016 +0000
+
+    MNT: Updated some of the pinned versions
+
+commit 3583057c49ecae6134aa0d7b1f8513b522349021
+Merge: 4b86d91 cbf0083
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sat May 21 10:58:30 2016 -0300
+
+    Merge pull request #23 from ocefpaf/test_win64
+    
+    Test Win64 with latest conda-build
+
+commit cbf008332e2201a369ec74c5a689cc7e8e5dbe7f
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sat May 21 10:25:58 2016 -0300
+
+    Test Win64 with latest conda-build
+
+commit 4b86d91ea1a81088079c5313ce392ca498ccbbe7
+Merge: 926d5ae 19c2916
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Tue May 17 13:53:01 2016 +0100
+
+    Merge pull request #22 from pelson/mpl_maint
+    
+    Added Mike as a maintainer. [skip ci]
+
+commit 19c291688b362c7075ae814a8f16ada9c6c7898c
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Tue May 17 13:39:46 2016 +0100
+
+    Added Mike as a maintainer. [skip ci]
+
+commit 926d5ae75b75dee37d09008fe333e44778b67794
+Merge: ae8647c 83a7afb
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Tue May 17 13:37:25 2016 +0100
+
+    Merge pull request #20 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit ae8647c89b707a613f7722e7062423c8365f6470
+Merge: c00097b 410106a
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Tue May 17 13:36:16 2016 +0100
+
+    Merge pull request #21 from ocefpaf/pin_freetype
+    
+    Ping freetype
+
+commit 410106aaf172536f74843c414927ec092b07395d
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sat May 14 16:30:25 2016 -0300
+
+    libpng patch
+
+commit 9811fa6d15d9cc3179963bd72eb327412a706e3c
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Tue May 10 10:44:50 2016 -0300
+
+    Pin to latest freetype.
+
+commit 83a7afb104deceaa6f81606f6d10257798a13c39
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sat May 14 16:43:37 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 0.10.3.
+    
+    [ci skip]
+
+commit c00097b7b3fa137870af2ba57a790c8fa7040ed8
+Merge: 345c77b bda828f
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon May 9 13:48:07 2016 -0300
+
+    Merge pull request #17 from ocefpaf/remove_janschulz
+    
+    Remove janschulz
+
+commit bda828f1cee39a4c3cb5f89be3ce8222ea75d9fa
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon May 9 13:36:09 2016 -0300
+
+    Remove janschulz
+    [skip ci]
+
+commit 345c77b691843c3de799bc127bf543a9224ae9d9
+Merge: e3ec4e2 4d98927
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon May 9 07:45:46 2016 -0300
+
+    Merge pull request #15 from ocefpaf/rerender_pin
+    
+    Rerender and pin versions
+
+commit 4d989277f5a58ec7246e73240179d0e40eb0fe6d
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sat May 7 12:29:14 2016 -0300
+
+    Don't build Win64+PY35
+
+commit 253fa18ed88ca2831b81f505837b4ebe69a32602
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Sat May 7 11:16:47 2016 -0300
+
+    Add pkg-config
+
+commit 96396d87653b7148eb181eac5ca9399b88382705
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Thu May 5 17:55:50 2016 -0300
+
+    Re-render and pin versions
+
+commit e3ec4e2554f77592af04c4a3337c91ebac1f090e
+Merge: f4c89cb f319d25
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Sat Apr 2 10:54:23 2016 +0100
+
+    Merge pull request #12 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit f319d25e57f9bdbcca2d875852d2a38bb1ff701a
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sat Apr 2 10:52:16 2016 +0100
+
+    MNT: Updated the feedstock for conda-smithy version 0.7.2.
+    
+    [ci skip]
+
+commit f4c89cb4d4dfc3c3c25cd160277f61674c2b1dd9
+Merge: 9b63a1d c40118c
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Sat Mar 26 23:40:28 2016 +0000
+
+    Merge pull request #9 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit c40118cf75f24ff880a871a2b40039dd796abf8e
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Sun Mar 27 00:28:10 2016 +0100
+
+    MNT: Updated the feedstock for conda-smithy version 0.7.1.
+    
+    [ci skip]
+
+commit 9b63a1d1c94445edb8f9ef490a05bdb77a8e4e6e
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Thu Jan 14 06:37:54 2016 +0000
+
+    Add the correct maintainer. That's embarrassing.
+
+commit b2d3e94a2a22ed09533b61fd875149423a6affee
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Mon Jan 11 06:07:01 2016 +0000
+
+    mpl1.5 on linux.
+
+commit e2d7c882d29d36266a011539dd1e1ed533cf5d79
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Mon Jan 11 05:47:21 2016 +0000
+
+    Move the yum into the docker container, so that it actually works.
+
+commit 38e2b0205553d22009aaff2d30c5598593e319fa
+Merge: c4521c5 a895c44
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Mon Jan 11 05:39:53 2016 +0000
+
+    Merge pull request #4 from pelson/osx_linux
+    
+    Updated so that OSX builds, and the Linux workaround is actually work…
+
+commit a895c44a4fe5b08ff3c30cf555bf98dcd6a91ef3
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Mon Jan 11 05:39:17 2016 +0000
+
+    Updated so that OSX builds, and the Linux workaround is actually working.
+
+commit c4521c591fb93e657eb7a84b0b2f8492c54d4d6e
+Merge: 29fa4f7 01f207d
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Mon Jan 11 05:24:29 2016 +0000
+
+    Merge pull request #3 from pelson/v1.5.1
+    
+    Update to v1.5.1. Put a temporary workaround to build on Linux.
+
+commit 01f207ddd144c85e837c76b67a82e910701614f7
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Mon Jan 11 05:23:42 2016 +0000
+
+    Update to v1.5.1. Put a temporary workaround to build on Linux.
+
+commit 29fa4f7e39c05cc73d5bdf06fb4d5263d8cd1cf4
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Sun Jan 10 13:54:02 2016 +0000
+
+    Major improvement to the conda-smithy CI scripts.
+
+commit 1cbb4041273ef35563064592fa806b34d0096c7b
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Sun Jan 10 09:53:00 2016 +0000
+
+    Skipped the Windows configuration. Linux (CircleCI) still needs improvement.
+
+commit 16450d8bfa4085eab0fd54ac8413b5a9c923d9ba
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Sun Jan 10 08:59:40 2016 +0000
+
+    Travis.yml improvements.
+
+commit ac0cbeea71b8a0e28fd35c8389c3044ca0cd344b
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Sun Jan 10 08:50:46 2016 +0000
+
+    Tweaks to CI whitespace.
+
+commit 0a7d8846bbee2a366437e09e3a0dc9f5b4bdb8b3
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Sun Jan 10 08:37:02 2016 +0000
+
+    Update to conda-smithy allows numpy x.x type version matrix resolution.
+
+commit 5b308501311e805abeee211ce3cd28e113171a4c
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Sun Jan 10 08:08:02 2016 +0000
+
+    Updated metadata.
+
+commit f6c463ba391420cc4ce764735040c04f77afe49b
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Sun Jan 10 08:01:16 2016 +0000
+
+    Initial commit of the matplotlib feedstock.
