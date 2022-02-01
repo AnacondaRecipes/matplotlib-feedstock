@@ -8,6 +8,7 @@ MACOSX_DEPLOYMENT_TARGET:       # [osx and x86_64]
   - 10.11                       # [osx and x86_64]
 numpy:
   - 1.19  # [not arm64]
+  - 1.19  # [not arm64]
   - 1.19
   - 1.19
   - 1.21
