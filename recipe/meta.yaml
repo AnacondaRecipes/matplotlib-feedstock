@@ -28,7 +28,6 @@ outputs:
         - tk  # [linux]
     requirements:
       build:
-        - numpy                                  # [build_platform != target_platform and not win]
         - pkg-config  # [not win]
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
@@ -56,11 +55,6 @@ outputs:
         - tk  # [linux]
 
     test:
-      requires:
-        - pytest
-        - pip
-      commands:
-        - pip check
       imports:
         - matplotlib
         - matplotlib.pyplot
@@ -74,6 +68,12 @@ outputs:
         - matplotlib.backends._tkagg  # [not win]
         - mpl_toolkits
         - pylab
+      requires:
+        - pytest
+        - pip
+      commands:
+        - pip check
+        - python -c "from pylab import *; set_loglevel('debug'); plot(); show()"
 
   - name: matplotlib
     build:
@@ -100,7 +100,7 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.7
+        - python
       run:
         - python >=3.7
         # match major/minor version, but allow noarch
@@ -114,7 +114,7 @@ outputs:
 about:
   home: https://matplotlib.org/
   license: LicenseRef-PSF-based
-  license_url: http://matplotlib.sourceforge.net/users/license.html
+  license_url: https://matplotlib.sourceforge.net/users/license.html
   license_family: PSF
   license_file: LICENSE/LICENSE
   summary: Publication quality figures in Python
