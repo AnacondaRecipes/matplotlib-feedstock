@@ -75,7 +75,6 @@ outputs:
         - pip
       commands:
         - pip check
-        - python -c "from pylab import *; set_loglevel('debug'); plot(); show()"
 
   - name: matplotlib
     build:
