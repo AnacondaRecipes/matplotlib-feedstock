@@ -1,7 +1,7 @@
 # Full credit goes to https://github.com/conda/conda-recipes for providing this recipe.
 # It has been subsequently adapted for automated building with conda-forge.
 
-{% set version = "3.5.0" %}
+{% set version = "3.5.1" %}
 
 package:
   name: matplotlib-suite
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
-  sha256: fc46f0eb54d9d51ddf0637e383afce2fdb6e352d894a81993b25d8df41eddaaf
+  sha256: 9683da9a0c84d1c42d1bf92ecf6e012d302406a38fd987e3dfbcb7b58b2eea2d
 
 build:
   number: 0
@@ -28,7 +28,6 @@ outputs:
         - tk  # [linux]
     requirements:
       build:
-        - numpy                                  # [build_platform != target_platform and not win]
         - pkg-config  # [not win]
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
@@ -37,7 +36,9 @@ outputs:
         - pip
         - certifi >=2020.06.20
         - freetype >=2.3
-        - numpy
+        - numpy   1.19  # [not (osx and arm64) and (py==37 or py==38 or py==39)]
+        - numpy   1.21  # [(osx and arm64) and (py==38 or py==39)]
+        - numpy   1.21  # [not ppc64le and py==310]
         - setuptools
         - setuptools_scm >=4
         - setuptools_scm_git_archive
@@ -56,11 +57,6 @@ outputs:
         - tk  # [linux]
 
     test:
-      requires:
-        - pytest
-        - pip
-      commands:
-        - pip check
       imports:
         - matplotlib
         - matplotlib.pyplot
@@ -74,6 +70,11 @@ outputs:
         - matplotlib.backends._tkagg  # [not win]
         - mpl_toolkits
         - pylab
+      requires:
+        - pytest
+        - pip
+      commands:
+        - pip check
 
   - name: matplotlib
     build:
@@ -100,7 +101,7 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.7
+        - python
       run:
         - python >=3.7
         # match major/minor version, but allow noarch
@@ -112,9 +113,9 @@ outputs:
         - python -c "import matplotlib; matplotlib.cbook.get_sample_data('msft.csv', asfileobj=False)"
 
 about:
-  home: http://matplotlib.org/
+  home: https://matplotlib.org/
   license: LicenseRef-PSF-based
-  license_url: http://matplotlib.sourceforge.net/users/license.html
+  license_url: https://matplotlib.sourceforge.net/users/license.html
   license_family: PSF
   license_file: LICENSE/LICENSE
   summary: Publication quality figures in Python
@@ -122,10 +123,10 @@ about:
     matplotlib is a python 2D plotting library which produces publication
     quality figures in a variety of hardcopy formats and interactive
     environments across platforms. matplotlib can be used in Python scripts,
-    the Python and IPython shell (ala MATLAB or Mathematica), web
+    the Python and IPython shell s(ala MATLAB or Mathematica), web
     application servers, and six graphical user interface toolkits.
   dev_url: https://github.com/matplotlib/matplotlib/
-  doc_url: http://matplotlib.org/contents.html
+  doc_url: https://matplotlib.org/contents.html
 
 extra:
   recipe-maintainers:
