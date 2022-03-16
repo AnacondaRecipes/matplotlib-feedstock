@@ -36,7 +36,7 @@ outputs:
         - pip
         - certifi >=2020.06.20
         - freetype >=2.3
-        - numpy   1.19  # [(not (osx and arm64) or (linux and ppc64le)) and (py==37 or py==38 or py==39)]
+        - numpy   1.19  # [not (osx and arm64) and (py==37 or py==38 or py==39)]
         - numpy   1.19  # [(linux and ppc64le) and (py==37 or py==38 or py==39)]
         - numpy   1.21  # [(osx and arm64) and (py==38 or py==39)]
         - numpy   1.21  # [py==310]
