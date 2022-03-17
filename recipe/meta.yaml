@@ -12,7 +12,7 @@ source:
   sha256: 9683da9a0c84d1c42d1bf92ecf6e012d302406a38fd987e3dfbcb7b58b2eea2d
 
 build:
-  number: 0
+  number: 1
   # matplotlib uses its own _tkmini.h file from the Tcl / Tk 8.6 header.
   # this is an optional backend that we include.
   ignore_run_exports:   # [linux]
@@ -38,7 +38,7 @@ outputs:
         - freetype >=2.3
         - numpy   1.19  # [not (osx and arm64) and (py==37 or py==38 or py==39)]
         - numpy   1.21  # [(osx and arm64) and (py==38 or py==39)]
-        - numpy   1.21  # [not ppc64le and py==310]
+        - numpy   1.21  # [py==310]
         - setuptools
         - setuptools_scm >=4
         - setuptools_scm_git_archive
