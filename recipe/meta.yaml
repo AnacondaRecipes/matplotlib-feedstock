@@ -1,7 +1,7 @@
 # Full credit goes to https://github.com/conda/conda-recipes for providing this recipe.
 # It has been subsequently adapted for automated building with conda-forge.
 
-{% set version = "3.5.1" %}
+{% set version = "3.5.2" %}
 
 package:
   name: matplotlib-suite
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
-  sha256: 9683da9a0c84d1c42d1bf92ecf6e012d302406a38fd987e3dfbcb7b58b2eea2d
+  sha256: c81325d1b0d822ef75fd71d243f98478cdca1f800a838a2a1bc8e4e17b8df93c
 
 build:
   number: 1
@@ -115,16 +115,15 @@ outputs:
 about:
   home: https://matplotlib.org/
   license: LicenseRef-PSF-based
-  license_url: https://matplotlib.sourceforge.net/users/license.html
+  license_url: https://matplotlib.org/stable/users/project/license.html
   license_family: PSF
   license_file: LICENSE/LICENSE
   summary: Publication quality figures in Python
   description: |
-    matplotlib is a python 2D plotting library which produces publication
-    quality figures in a variety of hardcopy formats and interactive
-    environments across platforms. matplotlib can be used in Python scripts,
-    the Python and IPython shell s(ala MATLAB or Mathematica), web
-    application servers, and six graphical user interface toolkits.
+    Matplotlib produces publication-quality figures in a variety of hardcopy formats
+    and interactive environments across platforms. Matplotlib can be used in
+    Python scripts, Python/IPython shells, web application servers,
+    and various graphical user interface toolkits.
   dev_url: https://github.com/matplotlib/matplotlib/
   doc_url: https://matplotlib.org/contents.html
 
