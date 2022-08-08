@@ -12,11 +12,7 @@ source:
   sha256: c81325d1b0d822ef75fd71d243f98478cdca1f800a838a2a1bc8e4e17b8df93c
 
 build:
-  number: 1
-  # matplotlib uses its own _tkmini.h file from the Tcl / Tk 8.6 header.
-  # this is an optional backend that we include.
-  ignore_run_exports:   # [linux]
-    - tk                # [linux]
+  number: 0
 
 outputs:
   - name: matplotlib-base
@@ -47,14 +43,12 @@ outputs:
         - python
         - cycler >=0.10
         - fonttools >=4.22.0
-        - freetype >=2.3
         - kiwisolver >=1.0.1
         - {{ pin_compatible('numpy') }}
         - packaging >=20.0
         - pillow >=6.2.0
         - pyparsing >=2.2.1
         - python-dateutil >=2.7
-        - tk  # [linux]
 
     test:
       imports:
@@ -63,6 +57,7 @@ outputs:
         - matplotlib._contour
         - matplotlib._image
         - matplotlib._path
+        - matplotlib._qhull
         - matplotlib._tri
         - matplotlib._ttconv
         - matplotlib.backends._backend_agg

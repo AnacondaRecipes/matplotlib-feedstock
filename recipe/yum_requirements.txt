@@ -1,1 +1,4 @@
 mesa-libGL
+libX11
+libXau
+libxcb
