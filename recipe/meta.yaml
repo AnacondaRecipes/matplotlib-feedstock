@@ -99,7 +99,7 @@ outputs:
       host:
         - python
       run:
-        - python >=3.7
+        - python
         # match major/minor version, but allow noarch
         - {{ pin_subpackage('matplotlib-base', max_pin="x.x") }}
     test:
