@@ -43,6 +43,7 @@ outputs:
         - python
         - cycler >=0.10
         - fonttools >=4.22.0
+        - freetype >=2.3
         - kiwisolver >=1.0.1
         - {{ pin_compatible('numpy') }}
         - packaging >=20.0
@@ -120,7 +121,7 @@ about:
     Python scripts, Python/IPython shells, web application servers,
     and various graphical user interface toolkits.
   dev_url: https://github.com/matplotlib/matplotlib/
-  doc_url: https://matplotlib.org/contents.html
+  doc_url: https://matplotlib.org/stable/users/index.html
 
 extra:
   recipe-maintainers:
