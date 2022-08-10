@@ -1,7 +1,7 @@
 # Full credit goes to https://github.com/conda/conda-recipes for providing this recipe.
 # It has been subsequently adapted for automated building with conda-forge.
 
-{% set version = "3.5.1" %}
+{% set version = "3.5.2" %}
 
 package:
   name: matplotlib-suite
@@ -9,14 +9,10 @@ package:
 
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
-  sha256: 9683da9a0c84d1c42d1bf92ecf6e012d302406a38fd987e3dfbcb7b58b2eea2d
+  sha256: c81325d1b0d822ef75fd71d243f98478cdca1f800a838a2a1bc8e4e17b8df93c
 
 build:
-  number: 1
-  # matplotlib uses its own _tkmini.h file from the Tcl / Tk 8.6 header.
-  # this is an optional backend that we include.
-  ignore_run_exports:   # [linux]
-    - tk                # [linux]
+  number: 0
 
 outputs:
   - name: matplotlib-base
@@ -54,7 +50,6 @@ outputs:
         - pillow >=6.2.0
         - pyparsing >=2.2.1
         - python-dateutil >=2.7
-        - tk  # [linux]
 
     test:
       imports:
@@ -63,6 +58,7 @@ outputs:
         - matplotlib._contour
         - matplotlib._image
         - matplotlib._path
+        - matplotlib._qhull
         - matplotlib._tri
         - matplotlib._ttconv
         - matplotlib.backends._backend_agg
@@ -103,7 +99,7 @@ outputs:
       host:
         - python
       run:
-        - python >=3.7
+        - python
         # match major/minor version, but allow noarch
         - {{ pin_subpackage('matplotlib-base', max_pin="x.x") }}
     test:
@@ -115,18 +111,17 @@ outputs:
 about:
   home: https://matplotlib.org/
   license: LicenseRef-PSF-based
-  license_url: https://matplotlib.sourceforge.net/users/license.html
+  license_url: https://matplotlib.org/stable/users/project/license.html
   license_family: PSF
   license_file: LICENSE/LICENSE
   summary: Publication quality figures in Python
   description: |
-    matplotlib is a python 2D plotting library which produces publication
-    quality figures in a variety of hardcopy formats and interactive
-    environments across platforms. matplotlib can be used in Python scripts,
-    the Python and IPython shell s(ala MATLAB or Mathematica), web
-    application servers, and six graphical user interface toolkits.
+    Matplotlib produces publication-quality figures in a variety of hardcopy formats
+    and interactive environments across platforms. Matplotlib can be used in
+    Python scripts, Python/IPython shells, web application servers,
+    and various graphical user interface toolkits.
   dev_url: https://github.com/matplotlib/matplotlib/
-  doc_url: https://matplotlib.org/contents.html
+  doc_url: https://matplotlib.org/stable/users/index.html
 
 extra:
   recipe-maintainers:
