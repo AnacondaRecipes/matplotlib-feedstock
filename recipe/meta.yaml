@@ -36,8 +36,7 @@ outputs:
         - numpy   1.21  # [(osx and arm64) and (py==38 or py==39)]
         - numpy   1.21  # [py==310]
         - setuptools
-        - setuptools_scm >=4
-        - setuptools_scm_git_archive
+        - setuptools_scm >=7
         - wheel
         - tk  # [linux]
       run:
@@ -51,6 +50,7 @@ outputs:
         - pillow >=6.2.0
         - pyparsing >=2.2.1
         - python-dateutil >=2.7
+        - contourpy>=1.0.1
 
     test:
       imports:
