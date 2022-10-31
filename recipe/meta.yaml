@@ -122,6 +122,7 @@ about:
     and various graphical user interface toolkits.
   dev_url: https://github.com/matplotlib/matplotlib/
   doc_url: https://matplotlib.org/stable/users/index.html
+  doc_source_url: https://github.com/matplotlib/matplotlib/tree/main/doc
 
 extra:
   recipe-maintainers:
