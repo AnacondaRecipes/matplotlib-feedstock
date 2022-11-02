@@ -1,7 +1,7 @@
 # Full credit goes to https://github.com/conda/conda-recipes for providing this recipe.
 # It has been subsequently adapted for automated building with conda-forge.
 
-{% set version = "3.5.2" %}
+{% set version = "3.5.3" %}
 
 package:
   name: matplotlib-suite
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
-  sha256: c81325d1b0d822ef75fd71d243f98478cdca1f800a838a2a1bc8e4e17b8df93c
+  sha256: 9d6ee7190fde3cb0c6285d462a0258c9735a72c7b532321a3983e05076aa41dc
 
 build:
   number: 0
@@ -32,6 +32,8 @@ outputs:
         - pip
         - certifi >=2020.06.20
         - freetype >=2.3
+        # an explanation to the utilization of numpy can be found
+        # here: https://github.com/AnacondaRecipes/matplotlib-feedstock/pull/13#issuecomment-1296704563
         - numpy   1.19  # [not (osx and arm64) and (py==37 or py==38 or py==39)]
         - numpy   1.21  # [(osx and arm64) and (py==38 or py==39)]
         - numpy   1.21  # [py==310]
@@ -122,6 +124,7 @@ about:
     and various graphical user interface toolkits.
   dev_url: https://github.com/matplotlib/matplotlib/
   doc_url: https://matplotlib.org/stable/users/index.html
+  doc_source_url: https://github.com/matplotlib/matplotlib/tree/main/doc
 
 extra:
   recipe-maintainers:
