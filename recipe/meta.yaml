@@ -19,31 +19,35 @@ outputs:
     script: build_base.bat  # [win]
     script: build_base.sh  # [not win]
     build:
-      skip: true  # [py<37]
+      skip: true  # [py<38]
       ignore_run_exports:
         - tk  # [linux]
+        - zlib
     requirements:
       build:
         - pkg-config  # [not win]
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
       host:
-        - python >=3.8
+        - python
         - pip >=9.0.1
         - certifi >=2020.06.20
-        - freetype >=2.3
+        - freetype
+        - zlib
         # an explanation to the utilization of numpy can be found
         # here: https://github.com/AnacondaRecipes/matplotlib-feedstock/pull/13#issuecomment-1296704563
         - numpy   1.19  # [not (osx and arm64) and (py==37 or py==38 or py==39)]
         - numpy   1.21  # [(osx and arm64) and (py==38 or py==39)]
         - numpy   1.21  # [py==310]
         - setuptools
-        - setuptools_scm >=4
+        - setuptools_scm >=7
         - setuptools_scm_git_archive
         - tk  # [linux]
       run:
         - python
+        - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
         - cycler >=0.10
+        - contourpy >=1.0.1
         - fonttools >=4.22.0
         - freetype >=2.3
         - kiwisolver >=1.0.1
@@ -52,12 +56,12 @@ outputs:
         - pillow >=6.2.0
         - pyparsing >=2.2.1
         - python-dateutil >=2.7
+        - freetype
 
     test:
       imports:
         - matplotlib
         - matplotlib.pyplot
-        - matplotlib._contour
         - matplotlib._image
         - matplotlib._path
         - matplotlib._qhull
@@ -82,8 +86,8 @@ outputs:
         - python
       run:
         - python
-        - pyqt  # [(linux64 or win) and python_impl == "cpython"]
-        - tornado
+        - pyqt  >=5  # [(linux64 or win) and python_impl == "cpython"]
+        - tornado >=5
         - {{ pin_subpackage('matplotlib-base', max_pin="x.x.x.x") }}
     test:
       imports:
