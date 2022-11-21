@@ -32,6 +32,8 @@ outputs:
         - pip >=9.0.1
         - certifi >=2020.06.20
         - freetype >=2.3
+        # an explanation to the utilization of numpy can be found
+        # here: https://github.com/AnacondaRecipes/matplotlib-feedstock/pull/13#issuecomment-1296704563
         - numpy   1.19  # [not (osx and arm64) and (py==37 or py==38 or py==39)]
         - numpy   1.21  # [(osx and arm64) and (py==38 or py==39)]
         - numpy   1.21  # [py==310]
@@ -122,6 +124,7 @@ about:
     and various graphical user interface toolkits.
   dev_url: https://github.com/matplotlib/matplotlib/
   doc_url: https://matplotlib.org/stable/users/index.html
+  doc_source_url: https://github.com/matplotlib/matplotlib/tree/main/doc
 
 extra:
   recipe-maintainers:
