@@ -26,6 +26,7 @@ outputs:
     requirements:
       build:
         - python
+        - cross-python_{{ target_platform }}       # [build_platform != target_platform]
         - numpy
         - pkg-config  # [not win]
         - {{ compiler('c') }}
