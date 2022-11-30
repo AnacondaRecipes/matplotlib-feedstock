@@ -42,6 +42,7 @@ outputs:
         - numpy   1.21  # [py==310]
         - setuptools
         - setuptools_scm >=7
+        - setuptools_scm_git_archive
         - tk  # [linux]
         - wheel
       run:
