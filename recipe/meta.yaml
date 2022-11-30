@@ -25,9 +25,6 @@ outputs:
         - zlib
     requirements:
       build:
-        - python
-        - cross-python_{{ target_platform }}       # [build_platform != target_platform]
-        - numpy
         - pkg-config  # [not win]
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
@@ -60,7 +57,7 @@ outputs:
         - {{ pin_compatible('numpy') }}
         - packaging >=20.0
         - pillow >=6.2.0
-        - pyparsing >=2.3.1
+        - pyparsing >=2.2.1
         - python-dateutil >=2.7
         - freetype
     test:
