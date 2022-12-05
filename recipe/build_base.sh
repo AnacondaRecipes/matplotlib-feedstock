@@ -18,6 +18,7 @@ cat conda_mpl_config.cfg
 sed -i.bak "s|/usr/local|${PREFIX}|" setupext.py
 
 export MPLSETUPCFG=conda_mpl_config.cfg
+export XDG_CACHE_HOME=${BUILD_PREFIX}/matplotlib.cache/
 
 if [[ $(uname) == "Darwin" ]]; then
   export CFLAGS="${CFLAGS} -Wno-unused-command-line-argument"
