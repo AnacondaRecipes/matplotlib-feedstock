@@ -10,6 +10,8 @@ package:
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
   sha256: 5ac5ca25e6ecd1e7711e1f859b4b6f74f290ef517387d1502bf8012bf2b1647e
+  patches:
+    - 000_use_github_url_qhull.patch  # [unix]
 
 build:
   number: 0
@@ -28,6 +30,7 @@ outputs:
         - pkg-config  # [not win]
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
+        - patch  # [unix]
       host:
         - python
         - pip >=9.0.1

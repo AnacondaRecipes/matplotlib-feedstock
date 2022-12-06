@@ -20,9 +20,9 @@ sed -i.bak "s|/usr/local|${PREFIX}|" setupext.py
 export MPLSETUPCFG=conda_mpl_config.cfg
 export XDG_CACHE_HOME=${BUILD_PREFIX}/matplotlib.cache/
 mkdir -p build
-# curl http://64.71.34.21/download/qhull-2020-src-8.0.2.tgz --output ./build/qhull-2020-src-8.0.2.tgz
-cp ${RECIPE_DIR}/qhull-2020-src-8.0.2.tgz ./build
-tar zxvf ./build/qhull-2020-src-8.0.2.tgz -C ./build
+# curl https://www.qhull.org/download/qhull-2020-src-8.0.2.tgz --output ./build/qhull-2020-src-8.0.2.tgz
+# cp ${RECIPE_DIR}/qhull-2020-src-8.0.2.tgz ./build
+# tar zxvf ./build/qhull-2020-src-8.0.2.tgz -C ./build
 
 if [[ $(uname) == "Darwin" ]]; then
   export CFLAGS="${CFLAGS} -Wno-unused-command-line-argument"
