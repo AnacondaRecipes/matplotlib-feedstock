@@ -19,4 +19,9 @@ sed -i.bak "s|/usr/local|${PREFIX}|" setupext.py
 
 export MPLSETUPCFG=conda_mpl_config.cfg
 
+if [[ $(uname) == "Darwin" ]]; then
+  export CFLAGS="${CFLAGS} -Wno-unused-command-line-argument"
+  export CXXFLAGS="${CXXFLAGS} -Wno-unused-command-line-argument"
+fi
+
 $PYTHON -m pip install . --no-deps -vv
