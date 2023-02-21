@@ -1,7 +1,7 @@
 # Full credit goes to https://github.com/conda/conda-recipes for providing this recipe.
 # It has been subsequently adapted for automated building with conda-forge.
 
-{% set version = "3.6.2" %}
+{% set version = "3.7.0" %}
 
 package:
   name: matplotlib-suite
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
-  sha256: 5ac5ca25e6ecd1e7711e1f859b4b6f74f290ef517387d1502bf8012bf2b1647e
+  sha256: e3a799e17fbee6949b4c3ca99d8bb05d847f39212a6f25e141de7389c96c99ca
   patches:
     # s390x fails to download qhull. This patch changes the download URL to point to Github. 
     # You must manually update LOCAL_QHULL_VERSION and LOCAL_QHULL_HASH from upstream.
@@ -24,9 +24,6 @@ outputs:
     script: build_base.sh  # [not win]
     build:
       skip: true  # [py<38]
-      ignore_run_exports:
-        - tk  # [linux]
-        - zlib
     requirements:
       build:
         - pkg-config  # [not win]
@@ -40,18 +37,19 @@ outputs:
         - certifi >=2020.06.20
         # freetype.pc requires zlib.pc
         - freetype
-        - zlib
+        - zlib 1.2.13
         # an explanation to the utilization of numpy can be found
         # here: https://github.com/AnacondaRecipes/matplotlib-feedstock/pull/13#issuecomment-1296704563
-        - numpy   1.19  # [not (osx and arm64) and (py==37 or py==38 or py==39)]
+        - numpy   1.20  # [not (osx and arm64) and (py==37 or py==38 or py==39)]
         - numpy   1.21  # [(osx and arm64) and (py==38 or py==39)]
         - numpy   1.21  # [py==310]
         - numpy   1.22  # [py==311]
         - setuptools
         - setuptools_scm >=7
         - setuptools_scm_git_archive
-        - tk  # [linux]
+        - tk 8.6.11 # [linux]
         - wheel
+        - pybind11 >=2.6
       run:
         - python
         - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
@@ -63,9 +61,12 @@ outputs:
         - {{ pin_compatible('numpy') }}
         - packaging >=20.0
         - pillow >=6.2.0
-        - pyparsing >=2.2.1
+        - pyparsing >=2.3.1
         - python-dateutil >=2.7
         - freetype
+        - zlib >=1.2.13,<1.3.0
+        - tk >=8.6.11,<8.7  # [linux]
+        - importlib_resources >=5.2.0  # [py<310]
     test:
       imports:
         - matplotlib
