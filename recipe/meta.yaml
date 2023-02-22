@@ -24,8 +24,8 @@ outputs:
     script: build_base.sh  # [not win]
     build:
       skip: true  # [py<38]
-        ignore_run_exports:
-          - zlib
+      ignore_run_exports:
+        - zlib
     requirements:
       build:
         - pkg-config  # [not win]
