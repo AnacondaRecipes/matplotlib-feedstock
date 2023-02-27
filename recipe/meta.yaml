@@ -10,7 +10,7 @@ package:
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
   sha256: e3a799e17fbee6949b4c3ca99d8bb05d847f39212a6f25e141de7389c96c99ca
-  patches:
+  patches:  # [unix]
     # s390x fails to download qhull. This patch changes the download URL to point to Github. 
     # You must manually update LOCAL_QHULL_VERSION and LOCAL_QHULL_HASH from upstream.
     - 000_use_github_url_qhull.patch  # [unix]
@@ -26,16 +26,15 @@ outputs:
       skip: true  # [py<38]
     requirements:
       build:
-        - pkg-config  # [not win]
+        - pkg-config 
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
         - patch  # [unix]
-        - m2-patch  # [not unix]
       host:
         - python
         - pip >=9.0.1
         - certifi >=2020.06.20
-        - freetype
+        - freetype 2.10
         - numpy ={{ numpy }}
         - setuptools 
         - setuptools_scm >=7
@@ -49,7 +48,7 @@ outputs:
         - cycler >=0.10
         - contourpy >=1.0.1
         - fonttools >=4.22.0
-        - freetype >=2.3
+        - freetype >=2.10
         - kiwisolver >=1.0.1
         - numpy >=1.20
         - {{ pin_compatible('numpy') }}
@@ -57,7 +56,6 @@ outputs:
         - pillow >=6.2.0
         - pyparsing >=2.3.1
         - python-dateutil >=2.7
-        - freetype
         - tk >=8.6.11,<8.7  # [linux]
         - importlib_resources >=5.2.0  # [py<310]
     test:
