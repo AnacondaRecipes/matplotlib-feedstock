@@ -24,8 +24,6 @@ outputs:
     script: build_base.sh  # [not win]
     build:
       skip: true  # [py<38]
-      ignore_run_exports:
-        - zlib
     requirements:
       build:
         - pkg-config  # [not win]
@@ -37,16 +35,9 @@ outputs:
         - python
         - pip >=9.0.1
         - certifi >=2020.06.20
-        # freetype.pc requires zlib.pc
         - freetype
-        - zlib
-        # an explanation to the utilization of numpy can be found
-        # here: https://github.com/AnacondaRecipes/matplotlib-feedstock/pull/13#issuecomment-1296704563
-        - numpy   1.20  # [not (osx and arm64) and (py==37 or py==38 or py==39)]
-        - numpy   1.21  # [(osx and arm64) and (py==38 or py==39)]
-        - numpy   1.21  # [py==310]
-        - numpy   1.22  # [py==311]
-        - setuptools
+        - numpy ={{ numpy }}
+        - setuptools 
         - setuptools_scm >=7
         - setuptools_scm_git_archive
         - tk 8.6.11 # [linux]
@@ -60,6 +51,7 @@ outputs:
         - fonttools >=4.22.0
         - freetype >=2.3
         - kiwisolver >=1.0.1
+        - numpy >=1.20
         - {{ pin_compatible('numpy') }}
         - packaging >=20.0
         - pillow >=6.2.0
