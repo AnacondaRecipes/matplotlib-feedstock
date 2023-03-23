@@ -16,7 +16,7 @@ source:
     - 000_use_github_url_qhull.patch  # [unix]
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: matplotlib-base
@@ -39,7 +39,7 @@ outputs:
         - setuptools 
         - setuptools_scm >=7
         - setuptools_scm_git_archive
-        - tk 8.6.11 # [linux]
+        - tk 8.6.12 # [linux]
         - wheel
         - pybind11 >=2.6
       run:
@@ -56,7 +56,7 @@ outputs:
         - pillow >=6.2.0
         - pyparsing >=2.3.1
         - python-dateutil >=2.7
-        - tk >=8.6.11,<8.7  # [linux]
+        - tk >=8.6.12,<8.7  # [linux]
         - importlib_resources >=5.2.0  # [py<310]
     test:
       imports:
