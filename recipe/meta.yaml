@@ -1,7 +1,7 @@
 # Full credit goes to https://github.com/conda/conda-recipes for providing this recipe.
 # It has been subsequently adapted for automated building with conda-forge.
 
-{% set version = "3.7.1" %}
+{% set version = "3.7.2" %}
 
 package:
   name: matplotlib-suite
@@ -9,14 +9,14 @@ package:
 
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
-  sha256: 3bea99442a7ef038bed34acb6d5adedfb787abce8b43f4817586089ff8887098
+  sha256: be06fea01c57517dbed17dd1aa8f2b3f5750c54203553f9d2096cf2e43a23b1e
   patches:  # [unix]
     # s390x fails to download qhull. This patch changes the download URL to point to Github. 
     # You must manually update LOCAL_QHULL_VERSION and LOCAL_QHULL_HASH from upstream.
     - 000_use_github_url_qhull.patch  # [unix]
 
 build:
-  number: 1
+  number: 0
 
 outputs:
   - name: matplotlib-base
@@ -35,7 +35,7 @@ outputs:
         - pip >=9.0.1
         - certifi >=2020.06.20
         - freetype 2.10
-        - numpy ={{ numpy }}
+        - numpy {{ numpy }}
         - setuptools 
         - setuptools_scm >=7
         - setuptools_scm_git_archive
@@ -86,7 +86,7 @@ outputs:
         - python
       run:
         - python
-        - pyqt  >=5  # [(linux64 or win) and python_impl == "cpython"]
+        - pyqt >=5  # [(linux64 or win) and python_impl == "cpython"]
         - tornado >=5
         - {{ pin_subpackage('matplotlib-base', max_pin="x.x.x") }}
     test:
