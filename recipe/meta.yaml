@@ -118,7 +118,6 @@ outputs:
 about:
   home: https://matplotlib.org/
   license: LicenseRef-PSF-based
-  license_url: https://matplotlib.org/stable/users/project/license.html
   license_family: PSF
   license_file: LICENSE/LICENSE
   summary: Publication quality figures in Python
