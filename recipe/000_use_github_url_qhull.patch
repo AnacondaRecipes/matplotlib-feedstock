@@ -13,7 +13,7 @@ index 0387223b94..f12eefe9de 100644
          else:
              raise IOError(
 @@ -187,7 +188,7 @@ LOCAL_FREETYPE_HASH = _freetype_hashes.get(LOCAL_FREETYPE_VERSION, 'unknown')
- # Also update the cache path in `.circleci/config.yml`.
+ # Also update the docs in `docs/devel/dependencies.rst`.
  LOCAL_QHULL_VERSION = '2020.2'
  LOCAL_QHULL_HASH = (
 -    'b5c2d7eb833278881b952c8a52d20179eab87766b00b865000469a45c1838b7e')

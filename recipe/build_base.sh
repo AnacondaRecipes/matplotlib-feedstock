@@ -26,4 +26,4 @@ if [[ $(uname) == "Darwin" ]]; then
   export CXXFLAGS="${CXXFLAGS} -Wno-unused-command-line-argument"
 fi
 
-$PYTHON -m pip install . --no-deps --no-build-isolation -vvv
+$PYTHON -m pip install . --no-deps --no-build-isolation -vv
