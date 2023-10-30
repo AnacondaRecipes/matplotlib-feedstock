@@ -35,7 +35,7 @@ outputs:
         - pip
         - certifi >=2020.06.20
         - freetype 2.10
-        - numpy 1.25
+        - numpy {{ numpy }}
         - setuptools 
         - setuptools_scm >=7
         - wheel
