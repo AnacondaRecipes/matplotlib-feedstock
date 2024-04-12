@@ -17,8 +17,6 @@ source:
 
 build:
   number: 0
-  missing_dso_whitelist:
-    - /opt/conda/conda-bld/matplotlib-suite_*_s390x-conda-linux-gnu/sysroot/lib64/ld64.so.1
 
 outputs:
   - name: matplotlib-base
@@ -38,7 +36,7 @@ outputs:
         - certifi >=2020.06.20
         - freetype 2.10
         - numpy {{ numpy }}
-        - setuptools 
+        - setuptools >=64
         - setuptools_scm >=7
         - wheel
         - pybind11 >=2.6
@@ -49,10 +47,10 @@ outputs:
         - contourpy >=1.0.1
         - fonttools >=4.22.0
         - freetype >=2.10
-        - kiwisolver >=1.0.1
+        - kiwisolver >=1.3.1
         - {{ pin_compatible('numpy') }}
         - packaging >=20.0
-        - pillow >=6.2.0
+        - pillow >=8
         - pyparsing >=2.3.1,<3.1
         - python-dateutil >=2.7
         - importlib_resources >=3.2.0  # [py<310]
