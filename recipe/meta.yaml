@@ -1,7 +1,7 @@
 # Full credit goes to https://github.com/conda/conda-recipes for providing this recipe.
 # It has been subsequently adapted for automated building with conda-forge.
 
-{% set version = "3.8.0" %}
+{% set version = "3.8.4" %}
 
 package:
   name: matplotlib-suite
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
-  sha256: 83e97200421dc8b0022eba92f03174d9bf80c966df25a6f03f44608bfe36a7ac
+  sha256: 7c4f370b7550eec8342c102f9dd80da3bec2895d7f514f5f6378764db4cb0e35
   patches:  # [unix]
     # s390x fails to download qhull. This patch changes the download URL to point to Github. 
     # You must manually update LOCAL_QHULL_VERSION and LOCAL_QHULL_HASH from upstream.
