@@ -17,6 +17,8 @@ source:
 
 build:
   number: 0
+  missing_dso_whitelist:
+    - /opt/conda/conda-bld/matplotlib-suite_*_s390x-conda-linux-gnu/sysroot/lib64/ld64.so.1
 
 outputs:
   - name: matplotlib-base
