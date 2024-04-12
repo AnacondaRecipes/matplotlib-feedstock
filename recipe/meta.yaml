@@ -30,6 +30,7 @@ outputs:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
         - patch  # [unix]
+        - libgcc-devel_linux-s390x # [s390x] 
       host:
         - python
         - pip
