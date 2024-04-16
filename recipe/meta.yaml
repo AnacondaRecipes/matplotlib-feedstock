@@ -14,13 +14,15 @@ source:
 
 build:
   number: 0
-  
+
 outputs:
   - name: matplotlib-base
     script: build_base.bat  # [win]
     script: build_base.sh  # [not win]
     build:
       skip: true  # [py<39]
+      missing_dso_whitelist:  # [s390x]
+        - $RPATH/ld64.so.1    # [s390x]
     requirements:
       build:
         - pkg-config 
@@ -73,6 +75,8 @@ outputs:
   - name: matplotlib
     build:
       skip: true  # [py<39]
+      missing_dso_whitelist:  # [s390x]
+        - $RPATH/ld64.so.1    # [s390x]
     requirements:
       host:
         - python
@@ -92,6 +96,8 @@ outputs:
       # running into some odd install issues with noarch on win32 only.
       skip: true  # [win32 or python_impl == "pypy"]
       skip: true  # [py<39]
+      missing_dso_whitelist:  # [s390x]
+        - $RPATH/ld64.so.1    # [s390x]
       noarch: python
     requirements:
       host:
