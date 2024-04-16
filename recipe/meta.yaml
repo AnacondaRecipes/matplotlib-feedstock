@@ -8,6 +8,9 @@ source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
   sha256: 7c4f370b7550eec8342c102f9dd80da3bec2895d7f514f5f6378764db4cb0e35
 
+build:
+  number: 0
+  
 outputs:
   - name: matplotlib-base
     script: build_base.bat  # [win]
