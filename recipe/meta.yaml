@@ -30,6 +30,7 @@ outputs:
         - libtool                                # [unix]
         - ninja
         - patch  # [unix]
+        - python
         # meson.build tries picking setuptools_scm up from the build environment not host,
         # see https://github.com/matplotlib/matplotlib/blob/v3.9.2/meson.build#L4
         - setuptools_scm >=7
