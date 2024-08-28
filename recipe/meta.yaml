@@ -1,7 +1,7 @@
 # Full credit goes to https://github.com/conda/conda-recipes for providing this recipe.
 # It has been subsequently adapted for automated building with conda-forge.
 
-{% set version = "3.8.4" %}
+{% set version = "3.9.2" %}
 
 package:
   name: matplotlib-suite
@@ -9,11 +9,7 @@ package:
 
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
-  sha256: 7c4f370b7550eec8342c102f9dd80da3bec2895d7f514f5f6378764db4cb0e35
-  patches:  # [unix]
-    # s390x fails to download qhull. This patch changes the download URL to point to Github. 
-    # You must manually update LOCAL_QHULL_VERSION and LOCAL_QHULL_HASH from upstream.
-    - 000_use_github_url_qhull.patch  # [unix]
+  sha256: 9c49b6683a34469e6d20864c7d5b975c4f29d7c60de1ce857980bead48769c3f
 
 build:
   number: 0
@@ -28,32 +24,37 @@ outputs:
         - $RPATH/ld64.so.1    # [s390x]
     requirements:
       build:
-        - pkg-config 
+        - pkg-config
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
+        - libtool                                # [unix]
+        - ninja
         - patch  # [unix]
+        # meson.build tries picking setuptools_scm up from the build environment not host,
+        # see https://github.com/matplotlib/matplotlib/blob/v3.9.2/meson.build#L4
+        - setuptools_scm >=7
       host:
         - python
         - pip
         - certifi >=2020.06.20
-        - freetype 2.10
+        - freetype {{ freetype }}
+        - meson-python >=0.13.1
         - numpy {{ numpy }}
-        - setuptools 
-        - setuptools_scm >=7
-        - wheel
         - pybind11 >=2.6
+        - python-build
+        - qhull
       run:
         - python
         - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
-        - cycler >=0.10
         - contourpy >=1.0.1
+        - cycler >=0.10
         - fonttools >=4.22.0
-        - freetype >=2.10
+        - freetype
         - kiwisolver >=1.3.1
         - {{ pin_compatible('numpy') }}
         - packaging >=20.0
         - pillow >=8
-        - pyparsing >=2.3.1,<3.1
+        - pyparsing >=2.3.1
         - python-dateutil >=2.7
         - importlib_resources >=3.2.0  # [py<310]
     test:
@@ -97,7 +98,6 @@ outputs:
       # running into some odd install issues with noarch on win32 only.
       skip: true  # [win32 or python_impl == "pypy"]
       skip: true  # [py<39]
-      noarch: python
     requirements:
       host:
         - python
