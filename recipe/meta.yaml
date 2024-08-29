@@ -25,6 +25,7 @@ requirements:
     - ninja
     - patch  # [unix]
     - meson
+    - setuptools_scm >=7
   host:
     - python
     - pip
@@ -56,6 +57,7 @@ outputs:
         - ninja
         - patch  # [unix]
         - meson
+        - setuptools_scm >=7
       host:
         - python
         - pip
