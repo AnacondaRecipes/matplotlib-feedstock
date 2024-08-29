@@ -30,7 +30,7 @@ requirements:
     - setuptools_scm >=7
   host:
     - python
-    - python-build
+    #- python-build
     - pip
     - meson-python >=0.13.1
     - certifi >=2020.06.20
