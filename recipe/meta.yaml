@@ -14,9 +14,16 @@ source:
 build:
   number: 0
 
-# to avoid creating redundant CI jobs, conda-smithy needs python
+# to avoid creating redundant CI jobs, conda-build needs python
 # to be used in all outputs, including the implicit global one.
 requirements:
+  build:
+    - pkg-config
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - libtool                                # [unix]
+    - ninja
+    - patch  # [unix]
   host:
     - python
     - pip
