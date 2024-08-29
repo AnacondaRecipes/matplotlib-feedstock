@@ -24,6 +24,7 @@ requirements:
     - libtool                                # [unix]
     - ninja
     - patch  # [unix]
+    - meson
   host:
     - python
     - pip
@@ -54,6 +55,7 @@ outputs:
         - libtool                                # [unix]
         - ninja
         - patch  # [unix]
+        - meson
       host:
         - python
         - pip
