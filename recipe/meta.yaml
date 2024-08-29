@@ -39,6 +39,7 @@ outputs:
         - libtool                                # [unix]
         - pkg-config
         - ninja
+        - meson
       host:
         - python
         - pip
