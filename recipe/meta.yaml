@@ -14,6 +14,12 @@ source:
 build:
   number: 0
 
+# to avoid creating redundant CI jobs, conda-smithy needs python
+# to be used in all outputs, including the implicit global one.
+requirements:
+  host:
+    - python
+
 outputs:
   - name: matplotlib-base
     script: build_base.bat  # [win]
@@ -30,13 +36,6 @@ outputs:
         - libtool                                # [unix]
         - ninja
         - patch  # [unix]
-        - python
-        # meson.build tries picking setuptools_scm up from the build environment not host,
-        # see https://github.com/matplotlib/matplotlib/blob/v3.9.2/meson.build#L4
-        - setuptools_scm >=7
-        - meson 1.2         # [py<=38]
-        - meson >=0.63.3    # [py<312]
-        - meson >=1.2.3     # [py>=312]
       host:
         - python
         - pip
