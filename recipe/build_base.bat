@@ -19,5 +19,5 @@ type builddir\meson-logs\meson-log.txt
 %PYTHON% -m build --wheel ^
          --no-isolation --skip-dependency-check -Cbuilddir=builddir -Ccompile-args=-v
 if errorlevel 1 exit 1
-%PYTHON% -m pip install --find-links dist matplotlib
+%PYTHON% -m pip install  . --no-deps --no-build-isolation -vv
 if errorlevel 1 exit 1
