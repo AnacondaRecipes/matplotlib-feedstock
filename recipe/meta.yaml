@@ -39,7 +39,8 @@ outputs:
         - libtool                                # [unix]
         - pkg-config
         - ninja
-        - meson
+        - meson  # [unix]
+        - setuptools_scm >=7  # [unix]
       host:
         - python
         - pip
