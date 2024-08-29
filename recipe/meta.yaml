@@ -14,6 +14,10 @@ source:
 build:
   number: 0
 
+requirements:
+  host:
+    - python
+
 outputs:
   - name: matplotlib-base
     script: build_base.bat  # [win]
