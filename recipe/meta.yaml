@@ -18,30 +18,8 @@ build:
 # to avoid creating redundant CI jobs, conda-build needs python
 # to be used in all outputs, including the implicit global one.
 requirements:
-  build:
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
-    - cmake                                  # [win]
-    - libtool                                # [unix]
-    - pkg-config
-    - ninja
-    - patch  # [unix]
-    - meson
-    - setuptools_scm >=7
   host:
     - python
-    #- python-build
-    - pip
-    - meson-python >=0.13.1
-    - certifi >=2020.06.20
-    - pybind11 >=2.6
-    - freetype {{ freetype }}
-    # freetype.pc requires zlib.pc
-    - zlib
-    - numpy {{ numpy }}
-    - qhull
-    - setuptools >=64
-    - setuptools_scm >=7
 
 outputs:
   - name: matplotlib-base
@@ -61,12 +39,8 @@ outputs:
         - libtool                                # [unix]
         - pkg-config
         - ninja
-        - patch  # [unix]
-        - meson
-        - setuptools_scm >=7
       host:
         - python
-        - python-build
         - pip
         - meson-python >=0.13.1
         - certifi >=2020.06.20
