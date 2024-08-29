@@ -19,6 +19,17 @@ build:
 requirements:
   host:
     - python
+    - pip
+    - certifi >=2020.06.20
+    - freetype {{ freetype }}
+    # freetype.pc requires zlib.pc
+    - zlib
+    - meson-python >=0.13.1
+    - numpy {{ numpy }}
+    - pybind11 >=2.6
+    - python-build
+    - qhull
+    - setuptools_scm >=7
 
 outputs:
   - name: matplotlib-base
