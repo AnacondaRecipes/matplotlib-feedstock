@@ -1,7 +1,7 @@
 # Full credit goes to https://github.com/conda/conda-recipes for providing this recipe.
 # It has been subsequently adapted for automated building with conda-forge.
 
-{% set version = "3.8.4" %}
+{% set version = "3.9.2" %}
 
 package:
   name: matplotlib-suite
@@ -9,14 +9,14 @@ package:
 
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
-  sha256: 7c4f370b7550eec8342c102f9dd80da3bec2895d7f514f5f6378764db4cb0e35
-  patches:  # [unix]
-    # s390x fails to download qhull. This patch changes the download URL to point to Github. 
-    # You must manually update LOCAL_QHULL_VERSION and LOCAL_QHULL_HASH from upstream.
-    - 000_use_github_url_qhull.patch  # [unix]
+  sha256: 9c49b6683a34469e6d20864c7d5b975c4f29d7c60de1ce857980bead48769c3f
 
 build:
   number: 0
+
+requirements:
+  host:
+    - python
 
 outputs:
   - name: matplotlib-base
@@ -28,34 +28,33 @@ outputs:
         - $RPATH/ld64.so.1    # [s390x]
     requirements:
       build:
-        - pkg-config 
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
-        - patch  # [unix]
+        - pkg-config
       host:
         - python
         - pip
-        - certifi >=2020.06.20
-        - freetype 2.10
-        - numpy {{ numpy }}
-        - setuptools 
+        - freetype {{ freetype }}
+        - numpy 1.23         # [py<311]
+        - numpy {{ numpy }}  # [py>=311]
         - setuptools_scm >=7
-        - wheel
         - pybind11 >=2.6
+        - meson-python >=0.13.1
+        - python-build
       run:
         - python
-        - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
-        - cycler >=0.10
         - contourpy >=1.0.1
+        - cycler >=0.10
         - fonttools >=4.22.0
-        - freetype >=2.10
         - kiwisolver >=1.3.1
         - {{ pin_compatible('numpy') }}
         - packaging >=20.0
         - pillow >=8
-        - pyparsing >=2.3.1,<3.1
+        - pyparsing >=2.3.1
         - python-dateutil >=2.7
         - importlib_resources >=3.2.0  # [py<310]
+        # bounds through run_exports
+        - freetype
     test:
       imports:
         - matplotlib
@@ -70,10 +69,12 @@ outputs:
         - matplotlib.backends._tkagg  # [not win]
         - mpl_toolkits
         - pylab
+        - matplotlib.cbook
       requires:
         - pip
       commands:
         - pip check
+        - python -c "import matplotlib; matplotlib.cbook.get_sample_data('msft.csv', asfileobj=False)"
 
   - name: matplotlib
     build:
@@ -89,27 +90,6 @@ outputs:
     test:
       imports:
         - matplotlib
-
-  - name: mpl_sample_data
-    script: install-data.sh  # [not win]
-    script: install-data.bat  # [win]
-    build:
-      # running into some odd install issues with noarch on win32 only.
-      skip: true  # [win32 or python_impl == "pypy"]
-      skip: true  # [py<39]
-      noarch: python
-    requirements:
-      host:
-        - python
-      run:
-        - python
-        # match major/minor version, but allow noarch
-        - {{ pin_subpackage('matplotlib-base', max_pin="x.x") }}
-    test:
-      imports:
-        - matplotlib.cbook
-      commands:
-        - python -c "import matplotlib; matplotlib.cbook.get_sample_data('msft.csv', asfileobj=False)"
 
 about:
   home: https://matplotlib.org/

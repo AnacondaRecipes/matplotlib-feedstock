@@ -1,29 +1,11 @@
 #!/bin/bash
-
 set -ex
 
-cat <<EOF > conda_mpl_config.cfg
-[directories]
-basedirlist = $PREFIX
+export AR=$GCC_AR
 
-[packages]
-tests = False
-toolkit_tests = False
-sample_data = False
-
-[libs]
-system_freetype = True
-
-EOF
-
-cat conda_mpl_config.cfg
-sed -i.bak "s|/usr/local|${PREFIX}|" setupext.py
-
-export MPLSETUPCFG=conda_mpl_config.cfg
-
-if [[ $(uname) == "Darwin" ]]; then
-  export CFLAGS="${CFLAGS} -Wno-unused-command-line-argument"
-  export CXXFLAGS="${CXXFLAGS} -Wno-unused-command-line-argument"
-fi
-
-$PYTHON -m pip install . --no-deps --no-build-isolation -vv
+$PYTHON -m build --wheel --no-isolation --skip-dependency-check \
+    -Cbuilddir=builddir \
+    -Csetup-args=-Dsystem-freetype=true \
+    -Csetup-args=-Dsystem-qhull=false \
+    || (cat builddir/meson-logs/meson-log.txt && exit 1)
+$PYTHON -m pip install --no-deps --no-build-isolation --no-index --find-links dist matplotlib

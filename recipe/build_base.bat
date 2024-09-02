@@ -1,17 +1,14 @@
-set LIB=%LIBRARY_LIB%;%LIB%
-set LIBPATH=%LIBRARY_LIB%;%LIBPATH%
-set INCLUDE=%LIBRARY_INC%;%INCLUDE%
+@echo on
 
-ECHO [directories] > mplsetup.cfg
-ECHO basedirlist = %LIBRARY_PREFIX% >> mplsetup.cfg
-ECHO [packages] >> mplsetup.cfg
-ECHO tests = False >> mplsetup.cfg
-ECHO sample_data = False >> mplsetup.cfg
-ECHO toolkits_tests = False >> mplsetup.cfg
-ECHO [libs] >> mplsetup.cfg
-ECHO system_freetype = True >> mplsetup.cfg
+set "PKG_CONFIG_PATH=%LIBRARY_LIB%\pkgconfig;%LIBRARY_PREFIX%\share\pkgconfig;%BUILD_PREFIX%\Library\lib\pkgconfig"
+"%PYTHON%" -m build --wheel --no-isolation --skip-dependency-check ^
+    -Cbuilddir=builddir ^
+    -Csetup-args=-Dsystem-freetype=true ^
+    -Csetup-args=-Dsystem-qhull=false
+if errorlevel 1 (
+  type builddir\meson-logs\meson-log.txt
+  exit /b 1
+)
 
-set MPLSETUPCFG=mplsetup.cfg
-
-%PYTHON% -m pip install . --no-deps --no-build-isolation -vv
+%PYTHON% -m pip install --no-deps --no-build-isolation --no-index --find-links dist matplotlib
 if errorlevel 1 exit 1
