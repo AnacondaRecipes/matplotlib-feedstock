@@ -36,7 +36,7 @@ outputs:
         - pip
         - freetype {{ freetype }}
         - numpy 2.0         # [py<313]
-        - numpy 2.1  # [py>=313]
+        - numpy {{ numpy }}  # [py>=313]
         - setuptools_scm >=7
         - pybind11 >=2.6
         - meson-python >=0.13.1
