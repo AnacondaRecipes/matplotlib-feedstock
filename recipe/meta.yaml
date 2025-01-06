@@ -1,7 +1,7 @@
 # Full credit goes to https://github.com/conda/conda-recipes for providing this recipe.
 # It has been subsequently adapted for automated building with conda-forge.
 
-{% set version = "3.9.2" %}
+{% set version = "3.10.0" %}
 
 package:
   name: matplotlib-suite
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://github.com/matplotlib/matplotlib/archive/v{{ version }}.tar.gz
-  sha256: 9c49b6683a34469e6d20864c7d5b975c4f29d7c60de1ce857980bead48769c3f
+  sha256: 825919da8957bbc19cec35caf8663b734d34af72a0b040c43b7d8c1b76fdcab7
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -23,7 +23,7 @@ outputs:
     script: build_base.bat  # [win]
     script: build_base.sh  # [not win]
     build:
-      skip: true  # [py<39]
+      skip: true  # [py<310]
       missing_dso_whitelist:  # [s390x]
         - $RPATH/ld64.so.1    # [s390x]
     requirements:
@@ -38,8 +38,8 @@ outputs:
         - numpy 2.0         # [py<313]
         - numpy {{ numpy }}  # [py>=313]
         - setuptools_scm >=7
-        - pybind11 >=2.6
-        - meson-python >=0.13.1
+        - pybind11 >=2.13.2,!=2.13.3
+        - meson-python >=0.13.1,<0.17.0
         - python-build
       run:
         - python
@@ -63,7 +63,6 @@ outputs:
         - matplotlib._path
         - matplotlib._qhull
         - matplotlib._tri
-        - matplotlib._ttconv
         - matplotlib.backends._backend_agg
         - matplotlib.ft2font
         - matplotlib.backends._tkagg  # [not win]
@@ -78,7 +77,7 @@ outputs:
 
   - name: matplotlib
     build:
-      skip: true  # [py<39]
+      skip: true  # [py<310]
     requirements:
       host:
         - python
