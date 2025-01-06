@@ -12,7 +12,7 @@ source:
   sha256: 825919da8957bbc19cec35caf8663b734d34af72a0b040c43b7d8c1b76fdcab7
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -23,7 +23,7 @@ outputs:
     script: build_base.bat  # [win]
     script: build_base.sh  # [not win]
     build:
-      skip: true  # [py<39]
+      skip: true  # [py<310]
       missing_dso_whitelist:  # [s390x]
         - $RPATH/ld64.so.1    # [s390x]
     requirements:
