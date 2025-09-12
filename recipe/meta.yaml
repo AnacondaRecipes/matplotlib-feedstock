@@ -2,7 +2,7 @@
 # It has been subsequently adapted for automated building with conda-forge.
 
 {% set name = "matplotlib" %}
-{% set version = "3.10.5" %}
+{% set version = "3.10.6" %}
 
 package:
   name: {{ name }}-suite
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: db21a7632898c424f8baa30c0a66d2e276fdfb4b9f9ee985f5c51728c7d0cdac
+  sha256: b553f599f639a9e19074c7e4f8f4343443483da6cd8819fbfcf6506f155ddf0e
 
 build:
   number: 0
@@ -91,7 +91,7 @@ outputs:
         - matplotlib
 
 about:
-  home: https://matplotlib.org/
+  home: https://matplotlib.org
   license: LicenseRef-PSF-based
   license_family: PSF
   license_file: LICENSE/LICENSE
@@ -101,8 +101,8 @@ about:
     and interactive environments across platforms. Matplotlib can be used in
     Python scripts, Python/IPython shells, web application servers,
     and various graphical user interface toolkits.
-  dev_url: https://github.com/matplotlib/matplotlib/
-  doc_url: https://matplotlib.org/
+  dev_url: https://github.com/matplotlib/matplotlib
+  doc_url: https://matplotlib.org
 
 extra:
   recipe-maintainers:
