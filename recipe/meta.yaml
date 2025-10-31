@@ -34,8 +34,8 @@ outputs:
         - python
         - pip
         - freetype {{ freetype }}
-        - numpy 2.0  # [py<313]
-        - numpy {{ numpy }}  # [py>=313]
+        - numpy-base 2.0  # [py<313]
+        - numpy-base {{ numpy }}  # [py>=313]
         - setuptools_scm >=7
         - pybind11 >=2.13.2,!=2.13.3
         - meson-python >=0.13.1,<0.17.0
