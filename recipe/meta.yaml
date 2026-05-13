@@ -76,6 +76,7 @@ outputs:
     requirements:
       host:
         - python
+        - pyqt {{ pyqt }}
       run:
         - python
         - pyqt >=5  # [(linux64 or win) and python_impl == "cpython"]
