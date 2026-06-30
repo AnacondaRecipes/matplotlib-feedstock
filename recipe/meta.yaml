@@ -1,7 +1,7 @@
 # Full credit goes to https://github.com/conda/conda-recipes for providing this recipe.
 # It has been subsequently adapted for automated building with conda-forge.
 {% set name = "matplotlib" %}
-{% set version = "3.10.9" %}
+{% set version = "3.11.0" %}
 
 package:
   name: {{ name }}-suite
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 55251fcbca725a3b7ed20aefaff07a67560ffb0a7d739ebab0c99eb14f4c2d94
+  sha256: 58723eaaa7d38b26fca940b537a26c5d14ebd87c60a5685e32299b55587fe561
 
 build:
   number: 0
@@ -23,7 +23,7 @@ outputs:
     script: build_base.bat  # [win]
     script: build_base.sh  # [not win]
     build:
-      skip: true  # [py<310]
+      skip: true  # [py<311]
     requirements:
       build:
         - {{ stdlib('c') }}
@@ -36,9 +36,9 @@ outputs:
         - python
         - freetype {{ freetype }}
         - numpy {{ numpy }}
-        - setuptools_scm >=7
+        - setuptools_scm >=7,<10
         - pybind11 >=2.13.2,!=2.13.3
-        - meson-python >=0.13.1,<0.17.0
+        - meson-python >=0.13.2,!=0.17.*
         - python-build
       run:
         - python
@@ -46,15 +46,16 @@ outputs:
         - cycler >=0.10
         - fonttools >=4.22.0
         - kiwisolver >=1.3.1
-        - numpy >=1.23
+        - numpy >=1.25
         - packaging >=20.0
-        - pillow >=8
+        - pillow >=9
         - pyparsing >=3
         - python-dateutil >=2.7
     test:
       imports:
         - matplotlib
         - matplotlib.pyplot
+        - matplotlib._c_internal_utils
         - matplotlib._image
         - matplotlib._path
         - matplotlib._qhull
@@ -72,7 +73,7 @@ outputs:
         - python -c "import matplotlib; matplotlib.cbook.get_sample_data('msft.csv', asfileobj=False)"
   - name: {{ name }}
     build:
-      skip: true  # [py<310]
+      skip: true  # [py<311]
     requirements:
       host:
         - python
