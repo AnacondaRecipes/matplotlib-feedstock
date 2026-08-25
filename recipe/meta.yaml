@@ -1,7 +1,7 @@
 # Full credit goes to https://github.com/conda/conda-recipes for providing this recipe.
 # It has been subsequently adapted for automated building with conda-forge.
 {% set name = "matplotlib" %}
-{% set version = "3.11.0" %}
+{% set version = "3.11.1" %}
 
 package:
   name: {{ name }}-suite
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 58723eaaa7d38b26fca940b537a26c5d14ebd87c60a5685e32299b55587fe561
+  sha256: b8a1eae79e86021624b43484bd07cb318ee83aa5f4ed4c3044dcfdcea63b07fe
 
 build:
   number: 0
@@ -77,6 +77,7 @@ outputs:
     requirements:
       host:
         - python
+        - pyqt {{ pyqt }}
       run:
         - python
         - pyqt >=5  # [(linux64 or win) and python_impl == "cpython"]
