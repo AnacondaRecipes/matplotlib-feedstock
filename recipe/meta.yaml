@@ -38,6 +38,7 @@ outputs:
         - freetype {{ freetype }}
         - numpy {{ numpy }}
         - setuptools_scm >=7,<10
+        - setuptools >=64
         - pybind11 >=2.13.2,!=2.13.3
         - meson-python >=0.13.2,!=0.17.*
         - python-build
@@ -72,7 +73,7 @@ outputs:
       commands:
         - pip check
         - python -c "import matplotlib; matplotlib.cbook.get_sample_data('msft.csv', asfileobj=False)"
-  
+
   - name: {{ name }}
     build:
       skip: true  # [py<311]
