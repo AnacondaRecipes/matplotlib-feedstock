@@ -47,7 +47,8 @@ outputs:
         - contourpy >=1.0.1
         - cycler >=0.10
         - fonttools >=4.28.2
-        - kiwisolver >=1.3.1
+        # kiwisolver has no Python 3.15 build on Windows ARM64 yet.
+        - kiwisolver >=1.3.1  # [not (win and arm64 and py>=315)]
         - numpy >=1.25
         - packaging >=20.0
         - pillow >=9
@@ -55,24 +56,24 @@ outputs:
         - python-dateutil >=2.7
     test:
       imports:
-        - matplotlib
-        - matplotlib.pyplot
-        - matplotlib._c_internal_utils
-        - matplotlib._image
-        - matplotlib._path
-        - matplotlib._qhull
-        - matplotlib._tri
-        - matplotlib.backends._backend_agg
-        - matplotlib.ft2font
+        - matplotlib  # [not (win and arm64 and py>=315)]
+        - matplotlib.pyplot  # [not (win and arm64 and py>=315)]
+        - matplotlib._c_internal_utils  # [not (win and arm64 and py>=315)]
+        - matplotlib._image  # [not (win and arm64 and py>=315)]
+        - matplotlib._path  # [not (win and arm64 and py>=315)]
+        - matplotlib._qhull  # [not (win and arm64 and py>=315)]
+        - matplotlib._tri  # [not (win and arm64 and py>=315)]
+        - matplotlib.backends._backend_agg  # [not (win and arm64 and py>=315)]
+        - matplotlib.ft2font  # [not (win and arm64 and py>=315)]
         - matplotlib.backends._tkagg  # [not win]
-        - mpl_toolkits
-        - pylab
-        - matplotlib.cbook
+        - mpl_toolkits  # [not (win and arm64 and py>=315)]
+        - pylab  # [not (win and arm64 and py>=315)]
+        - matplotlib.cbook  # [not (win and arm64 and py>=315)]
       requires:
         - pip
       commands:
-        - pip check
-        - python -c "import matplotlib; matplotlib.cbook.get_sample_data('msft.csv', asfileobj=False)"
+        - pip check  # [not (win and arm64 and py>=315)]
+        - python -c "import matplotlib; matplotlib.cbook.get_sample_data('msft.csv', asfileobj=False)"  # [not (win and arm64 and py>=315)]
 
   - name: {{ name }}
     build:
